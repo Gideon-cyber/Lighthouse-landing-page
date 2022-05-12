@@ -15,10 +15,63 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 14px;
 }
 
-p {
-  font-size: 24px;
-  font-weight: 200;
+a {
+  text-decoration: none;
+}
+
+.padding-lr {
+  padding: 0 6%;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.4)), to(rgba(4, 4, 4, 0.2))), url(/images/lhrc.jpg);
+  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)), url(/images/lhrc.jpg);
+  background-size: 115%;
+  background-repeat: no-repeat;
+}
+
+.hero__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__header_contact {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0 6% 0 4%;
+}
+
+.hero__header_logo img {
+  height: 70px;
+}
+
+.hero__nav ul {
+  padding: 0;
+}
+
+.hero__nav li {
+  list-style: none;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__nav li:not(:last-child) {
+  margin-right: 1.5625rem;
+}
+
+.hero__nav a {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
