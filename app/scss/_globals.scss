@@ -24,3 +24,30 @@ a {
 .padding-lr {
   padding: 0 6%;
 }
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  background-color: $white;
+  color: #222;
+
+  @include breakpoints-down(medium) {
+    padding: 0.625rem 1rem;
+  }
+
+  &:hover {
+    background-color: $blue-primary;
+  }
+}
+
+.hidden-dt {
+  @include breakpoints-up(medium) {
+    display: none;
+  }
+}
+
+.hidden-mob {
+  @include breakpoints-down(medium) {
+    display: none;
+  }
+}
