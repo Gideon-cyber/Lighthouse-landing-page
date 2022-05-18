@@ -494,4 +494,91 @@ a {
           backdrop-filter: blur(1.5px);
   z-index: 3;
 }
+
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  height: 19.25rem;
+}
+
+@media (max-width: 42.1875em) {
+  .services {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.services__corporate {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1571b0), to(rgba(21, 113, 176, 0.3))), url(/images/corporatehr.jpg);
+  background-image: linear-gradient(#1571b0, rgba(21, 113, 176, 0.3)), url(/images/corporatehr.jpg);
+}
+
+.services__workplace {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#203a73), to(rgba(32, 58, 115, 0.3))), url(/images/workplacesol.jpg);
+  background-image: linear-gradient(#203a73, rgba(32, 58, 115, 0.3)), url(/images/workplacesol.jpg);
+}
+
+.services__performance {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1d3166), to(rgba(29, 49, 102, 0.3))), url(/images/performance1.jpg);
+  background-image: linear-gradient(to right, #1d3166, rgba(29, 49, 102, 0.3)), url(/images/performance1.jpg);
+}
+
+.services__container {
+  margin: 4rem 0 0 4rem;
+}
+
+@media (max-width: 42.1875em) {
+  .services__container {
+    margin: 4rem 0 4rem 0rem;
+  }
+}
+
+.services__container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3125rem;
+}
+
+.services__container p {
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+.services a {
+  color: #fff;
+  display: block;
+  margin-top: 4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 42.1875em) {
+  .services a {
+    font-size: 0.875rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.services a:after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 3px;
+  background-color: #fff;
+}
+
+@media (max-width: 42.1875em) {
+  .services a:after {
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
