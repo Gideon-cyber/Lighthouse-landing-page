@@ -1,0 +1,81 @@
+.about {
+  color: #222;
+  text-align: center;
+  position: relative;
+  height: 37.5rem;
+  overflow: hidden;
+
+  &__welcome {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    font-size: 25rem;
+    margin: auto 0;
+    color: $white;
+    text-shadow: 0.3125rem 0.3125rem 1.875rem rgba(0, 0, 0, 0.021);
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
+
+    @include breakpoints-down(medium) {
+      width: 80%;
+    }
+
+    p {
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: $font-lg;
+      margin-top: 1rem;
+    }
+
+    &_firstParah {
+      font-size: 1.125rem;
+      margin-bottom: 0.8125rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+      }
+
+      span {
+        color: $blue-primary;
+      }
+    }
+
+    &_secondParah {
+      font-size: 1.125rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+      }
+
+      span {
+        color: $blue-primary;
+      }
+    }
+
+    &_learnMore {
+      a {
+        display: inline-block;
+        margin-top: 1.5rem;
+        font-weight: 400;
+      }
+      .button {
+        background-color: none;
+        border: 1px solid black;
+
+        &:hover {
+          border: 1px solid $blue-primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}

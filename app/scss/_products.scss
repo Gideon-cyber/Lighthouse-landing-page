@@ -1,0 +1,29 @@
+.products {
+  // height: 100vh;
+  width: 100%;
+  background-color: #17285b;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+
+    @include breakpoints-down(medium) {
+      grid-template-columns: 1fr;
+    }
+
+    &_box {
+      margin-top: 2rem;
+      h1 {
+        font-size: 1.125rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

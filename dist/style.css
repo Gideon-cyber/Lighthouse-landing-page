@@ -124,7 +124,13 @@ a {
 }
 
 .padding-lr {
-  padding: 0 6%;
+  padding: 0 5.1rem;
+}
+
+@media (max-width: 42.1875em) {
+  .padding-lr {
+    padding: 0 2rem;
+  }
 }
 
 .button {
@@ -508,6 +514,7 @@ a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     text-align: center;
+    height: 52rem;
   }
 }
 
@@ -580,5 +587,128 @@ a {
   .services a:after {
     margin: 0 auto;
   }
+}
+
+.about {
+  color: #222;
+  text-align: center;
+  position: relative;
+  height: 37.5rem;
+  overflow: hidden;
+}
+
+.about__welcome {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  font-size: 25rem;
+  margin: auto 0;
+  color: #fff;
+  text-shadow: 0.3125rem 0.3125rem 1.875rem rgba(0, 0, 0, 0.021);
+}
+
+.about__text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  z-index: 2;
+}
+
+@media (max-width: 42.1875em) {
+  .about__text {
+    width: 80%;
+  }
+}
+
+.about__text p {
+  letter-spacing: 2px;
+}
+
+.about__text h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.about__text_firstParah {
+  font-size: 1.125rem;
+  margin-bottom: 0.8125rem;
+}
+
+@media (max-width: 42.1875em) {
+  .about__text_firstParah {
+    font-size: 0.875rem;
+  }
+}
+
+.about__text_firstParah span {
+  color: #86cdea;
+}
+
+.about__text_secondParah {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 42.1875em) {
+  .about__text_secondParah {
+    font-size: 0.875rem;
+  }
+}
+
+.about__text_secondParah span {
+  color: #86cdea;
+}
+
+.about__text_learnMore a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: 400;
+}
+
+.about__text_learnMore .button {
+  background-color: none;
+  border: 1px solid black;
+}
+
+.about__text_learnMore .button:hover {
+  border: 1px solid #86cdea;
+  color: #fff;
+}
+
+.products {
+  width: 100%;
+  background-color: #17285b;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.products__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 42.1875em) {
+  .products__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.products__grid_box {
+  margin-top: 2rem;
+}
+
+.products__grid_box h1 {
+  font-size: 1.125rem;
+}
+
+.products__grid_box p {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */
