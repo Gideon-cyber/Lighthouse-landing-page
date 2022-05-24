@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="/dist/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Lighthouse HR Company</title>
   </head>
   <body>
@@ -22,6 +28,8 @@
           <div class="hero__header_logo">
             <img src="/images/logo1.png" alt="logo" />
           </div>
+
+          <!-- hamburger menu for mobile -->
           <div class="hero__header_hamburger hidden-dt">
             <span></span>
             <span></span>
@@ -82,6 +90,8 @@
         </a>
       </div>
     </section>
+
+    <!-- services page section  -->
     <section class="services">
       <div class="services__corporate">
         <div class="services__container">
@@ -245,6 +255,97 @@
         </div>
       </div>
     </section>
+
+    <!-- video section of page  -->
+    <section class="video">
+      <div class="video__btn">
+        <div class="video__btn_play"></div>
+      </div>
+      <div class="video__text">
+        <h3>Amazing videos from our events</h3>
+      </div>
+      <div class="video__clip">
+        <div class="video__clip_text">Close</div>
+        <div class="video__clip_box"></div>
+      </div>
+    </section>
+
+    <!-- works section of page -->
+    <section class="works padding-lr">
+      <h2>Our Works</h2>
+      <p>
+        Browse through our gallery to see who we are, how we work, and what
+        inspires us. We provide a wide range of services to meet even the most
+        daring requirements.
+      </p>
+
+      <div class="works__main-carousel">
+        <div class="works__carousel-cell">
+          <img src="/images/workplacesol2.jpg" alt="" />
+        </div>
+        <div class="works__carousel-cell">
+          <img src="/images/performance2.jpg" alt="" />
+        </div>
+        <div class="works__carousel-cell">
+          <img src="/images/corporatehr.jpg" alt="" />
+        </div>
+        <div class="works__carousel-cell">
+          <img src="/images/workplacesol.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section  -->
+    <section class="testimonials padding-lr">
+      <div class="testimonials__box">
+        <h2>Testimonials</h2>
+        <div class="testimonials__box_container">
+          <div class="testimonials__box_container__one">
+            <img src="/images/testimonials1.jpeg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M29 23H37V15H29ZM11 23H19V15H11ZM34.85 34Q33.6 34 32.975 32.975Q32.35 31.95 32.9 30.85L35.3 26H29Q27.75 26 26.875 25.125Q26 24.25 26 23V15Q26 13.75 26.875 12.875Q27.75 12 29 12H37Q38.25 12 39.125 12.875Q40 13.75 40 15V25.7Q40 26.05 39.925 26.4Q39.85 26.75 39.7 27.05L36.8 32.8Q36.55 33.35 36.025 33.675Q35.5 34 34.85 34ZM16.85 34Q15.6 34 14.975 32.975Q14.35 31.95 14.9 30.85L17.3 26H11Q9.75 26 8.875 25.125Q8 24.25 8 23V15Q8 13.75 8.875 12.875Q9.75 12 11 12H19Q20.25 12 21.125 12.875Q22 13.75 22 15V25.7Q22 26.05 21.925 26.4Q21.85 26.75 21.7 27.05L18.8 32.8Q18.55 33.35 18.025 33.675Q17.5 34 16.85 34ZM11 23V15H19V23ZM29 23V15H37V23Z"
+              />
+            </svg>
+            <p>
+              I attended the Virtual Assistant course, it really exposed the
+              skills I have and do not monetize. After class I pitched to a
+              prospective client to manage their social media platforms, using
+              my results on my my own instagram profile.<br />I just landed my
+              first client as a VA, and goes what!!!! On retainership<br />Thank
+              you so much Lighthouse HR company for the awesome training
+            </p>
+            <div class="testimonials__box_container__one_speaker">
+              <h3>TAIWO ADEWUMI</h3>
+              <p>Life Oasis Accountants</p>
+            </div>
+          </div>
+          <div class="testimonials__box_container__one">
+            <img src="/images/testimonials2.jpeg" alt="" />
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M29 23H37V15H29ZM11 23H19V15H11ZM34.85 34Q33.6 34 32.975 32.975Q32.35 31.95 32.9 30.85L35.3 26H29Q27.75 26 26.875 25.125Q26 24.25 26 23V15Q26 13.75 26.875 12.875Q27.75 12 29 12H37Q38.25 12 39.125 12.875Q40 13.75 40 15V25.7Q40 26.05 39.925 26.4Q39.85 26.75 39.7 27.05L36.8 32.8Q36.55 33.35 36.025 33.675Q35.5 34 34.85 34ZM16.85 34Q15.6 34 14.975 32.975Q14.35 31.95 14.9 30.85L17.3 26H11Q9.75 26 8.875 25.125Q8 24.25 8 23V15Q8 13.75 8.875 12.875Q9.75 12 11 12H19Q20.25 12 21.125 12.875Q22 13.75 22 15V25.7Q22 26.05 21.925 26.4Q21.85 26.75 21.7 27.05L18.8 32.8Q18.55 33.35 18.025 33.675Q17.5 34 16.85 34ZM11 23V15H19V23ZM29 23V15H37V23Z"
+              />
+            </svg>
+            <p>
+              Lighthouse HR Company provided our organisation with 360 HR
+              support. They are your go to brand for all things HR. They are a
+              trust worthy brand, that deliver quality services and relevant
+              support. They are highly recommended by me.
+            </p>
+            <div class="testimonials__box_container__one_speaker">
+              <h3>ABRAHAM OMOTAYO</h3>
+              <p>Cofounder, Prism Africa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- progress bar section  -->
+    <section class="progress"></section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/app/js/script.js"></script>
   </body>
 </html>
