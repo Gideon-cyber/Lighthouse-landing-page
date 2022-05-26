@@ -12,7 +12,7 @@
     margin: 0 auto;
     padding: 2rem;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       width: 100%;
       padding: 1.5rem;
     }
@@ -23,7 +23,7 @@
       margin: 0;
       margin-bottom: 1.5rem;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         font-size: 1.5rem;
         line-height: 1.5rem;
         margin-bottom: 0.825rem;
@@ -35,7 +35,7 @@
       //   align-items: center;
       flex-direction: row;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         flex-direction: column;
       }
 

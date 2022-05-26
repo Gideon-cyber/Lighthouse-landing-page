@@ -4,7 +4,7 @@
   height: 19.25rem;
   //   border: 2px solid red;
 
-  @include breakpoints-down(medium) {
+  @include breakpoints-down(large) {
     grid-template-columns: 1fr;
     text-align: center;
     height: 52rem;
@@ -15,9 +15,16 @@
     width: 100%;
     background-image: linear-gradient(
         rgba(21, 113, 176, 1),
-        rgba(21, 113, 176, 0.3)
+        rgba(21, 113, 176, 0.7)
       ),
       url(/images/corporatehr.jpg);
+
+    @include breakpoints-down(large) {
+      background: linear-gradient(
+        rgba(21, 113, 176, 1),
+        rgba(21, 113, 176, 0.7)
+      );
+    }
   }
 
   &__workplace {
@@ -25,9 +32,13 @@
     width: 100%;
     background-image: linear-gradient(
         rgba(32, 58, 115, 1),
-        rgba(32, 58, 115, 0.3)
+        rgba(32, 58, 115, 0.7)
       ),
       url(/images/workplacesol.jpg);
+
+    @include breakpoints-down(large) {
+      background: linear-gradient(rgba(32, 58, 115, 1), rgba(32, 58, 115, 0.7));
+    }
   }
 
   &__performance {
@@ -36,15 +47,19 @@
     background-image: linear-gradient(
         to right,
         rgba(29, 49, 102, 1),
-        rgba(29, 49, 102, 0.3)
+        rgba(29, 49, 102, 0.7)
       ),
       url(/images/performance1.jpg);
+
+    @include breakpoints-down(large) {
+      background: linear-gradient(rgba(29, 49, 102, 1), rgba(29, 49, 102, 0.7));
+    }
   }
 
   &__container {
     margin: 4rem 0 0 4rem;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       margin: 4rem 0 4rem 0rem;
     }
 
@@ -67,7 +82,7 @@
     margin-top: 4rem;
     font-weight: 700;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       font-size: $font-sm;
       margin-top: 2.5rem;
     }
@@ -79,7 +94,7 @@
       height: 3px;
       background-color: $white;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         margin: 0 auto;
       }
     }

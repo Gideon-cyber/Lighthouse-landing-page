@@ -11,6 +11,10 @@
     gap: 1.5rem;
     text-align: center;
 
+    @include breakpoints-down(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     @include breakpoints-down(medium) {
       grid-template-columns: 1fr;
     }

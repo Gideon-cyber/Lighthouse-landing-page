@@ -1,0 +1,41 @@
+.cta {
+  color: #222;
+  text-align: center;
+  font-size: 1.87rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+
+  @include breakpoints-down(large) {
+    font-size: 1.25;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  &__text {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__button {
+    font-size: 1.25rem;
+    align-self: center;
+
+    a {
+      border: 2px solid #222;
+
+      @include breakpoints-down(large) {
+        margin-top: 0.625rem;
+        display: inline-block;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: rgba(32, 58, 115, 1);
+      }
+    }
+  }
+}

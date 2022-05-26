@@ -59,7 +59,7 @@
       display: flex;
       align-items: center;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         display: none;
       }
 
@@ -76,7 +76,7 @@
     ul {
       padding: 0;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         background-color: white;
         width: 85%;
         display: flex;
@@ -95,7 +95,7 @@
       display: inline-block;
       align-items: center;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -106,7 +106,7 @@
       &:not(:last-child) {
         margin-right: 1.5625rem;
 
-        @include breakpoints-down(medium) {
+        @include breakpoints-down(large) {
           margin-right: 0;
           margin-bottom: 0.8125rem;
         }
@@ -133,7 +133,7 @@
       color: $white;
       display: inline-block;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         color: #222;
         text-align: center;
       }
@@ -162,14 +162,14 @@
       text-align: center;
       margin: 0;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         font-size: 1.125rem;
       }
 
       span {
         font-size: $font-xxlg;
 
-        @include breakpoints-down(medium) {
+        @include breakpoints-down(large) {
           font-size: 3rem;
         }
       }
@@ -181,7 +181,7 @@
       text-align: center;
       margin: 1rem 0;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         width: 75%;
         font-size: 12px;
       }
@@ -191,7 +191,7 @@
       font-family: "Times New Roman", Times, serif;
       margin: 1rem 0;
 
-      @include breakpoints-down(medium) {
+      @include breakpoints-down(large) {
         font-size: 12px;
       }
     }
@@ -236,7 +236,7 @@
       }
     }
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       display: none;
     }
   }

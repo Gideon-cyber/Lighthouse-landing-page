@@ -4,7 +4,7 @@
   padding-top: 5%;
   padding-bottom: 6rem;
 
-  @include breakpoints-down(medium) {
+  @include breakpoints-down(large) {
     padding-bottom: 4rem;
   }
 
@@ -12,7 +12,7 @@
     font-size: $font-lg;
     margin-bottom: 0.5rem;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       font-size: 1.7rem;
     }
   }
@@ -22,7 +22,7 @@
     margin: 0 auto;
     margin-bottom: 1rem;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       font-size: $font-sm;
       width: 100%;
     }
@@ -41,7 +41,7 @@
     counter-increment: gallery-cell;
     border-radius: 0.625rem;
 
-    @include breakpoints-down(medium) {
+    @include breakpoints-down(large) {
       width: 80%;
       height: 15.625rem;
     }

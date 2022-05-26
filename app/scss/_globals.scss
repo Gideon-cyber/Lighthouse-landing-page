@@ -15,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: $white;
   font-size: $font-sm;
+  background-color: $white;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
   background-color: $white;
   color: #222;
 
-  @include breakpoints-down(medium) {
+  @include breakpoints-down(large) {
     padding: 0.625rem 1rem;
   }
 
@@ -45,13 +46,13 @@ a {
 }
 
 .hidden-dt {
-  @include breakpoints-up(medium) {
+  @include breakpoints-up(large) {
     display: none;
   }
 }
 
 .hidden-mob {
-  @include breakpoints-down(medium) {
+  @include breakpoints-down(large) {
     display: none;
   }
 }
