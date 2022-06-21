@@ -1,0 +1,402 @@
+.aboutPage {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)),
+    url(/images/sliderbg1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+
+    &_contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 0 6% 0 4%;
+      height: 4.125rem; //66px
+    }
+
+    &_logo {
+      img {
+        height: 4.375rem; //70px
+      }
+    }
+
+    &_hamburger {
+      span {
+        height: 2px;
+        width: 1.5rem;
+        background-color: $white;
+        display: block;
+        transition: all 300ms ease-in-out;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+
+      &.open {
+        > span:first-child {
+          transform: rotate(45deg) translate(3px, 6px);
+        }
+
+        > span:nth-child(2) {
+          transform: translateX(-10px);
+          background: transparent;
+        }
+
+        > span:last-child {
+          transform: rotate(-45deg) translate(4px, -7px);
+        }
+      }
+    }
+
+    &_contactInfo {
+      display: flex;
+      align-items: center;
+
+      @include breakpoints-down(large) {
+        display: none;
+      }
+
+      img {
+        height: 21px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__nav {
+    z-index: 4;
+
+    ul {
+      padding: 0;
+
+      @include breakpoints-down(large) {
+        background-color: white;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+        position: relative;
+        padding: 1rem 7rem;
+        z-index: 8;
+      }
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      align-items: center;
+
+      @include breakpoints-down(large) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.5625rem;
+
+        @include breakpoints-down(large) {
+          margin-right: 0;
+          margin-bottom: 0.8125rem;
+        }
+      }
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $blue-primary;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    a {
+      color: $white;
+      display: inline-block;
+
+      @include breakpoints-down(large) {
+        color: #222;
+        text-align: center;
+      }
+
+      &:hover {
+        color: $blue-primary;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+
+    margin-top: 4rem; //64px
+
+    @include breakpoints-down(large) {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      margin-top: 0rem;
+    }
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+
+      @include breakpoints-down(large) {
+        text-align: center;
+      }
+
+      h1 {
+        //   font-family: "Times New Roman", Times, serif;
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include breakpoints-down(large) {
+          font-size: 3.125rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.15rem; //18.4px
+        width: 550px;
+        margin: 1rem 0;
+
+        @include breakpoints-down(large) {
+          width: 75%;
+          margin: auto;
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &_links {
+      a {
+        color: $white;
+        margin: 1rem 0;
+        font-size: 1rem; //16px
+
+        @include breakpoints-down(large) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  &__whatsappBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    background: rgba(137, 189, 73, 0.25);
+    border: none;
+    border-radius: 30px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    z-index: 33;
+
+    .fa-brands {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #89bd49;
+      border-radius: 50%;
+      margin: 10px 0 10px 10px;
+      position: relative;
+      // z-index: inherit;
+
+      &::after {
+        content: "";
+        // display: block;
+        width: 60px;
+        height: 60px;
+        background: rgba(137, 189, 73, 0.3);
+        border-radius: 50%;
+        transform: scale(1);
+        animation: pulse 3s ease-in-out infinite;
+        position: absolute;
+      }
+    }
+
+    @include breakpoints-down(large) {
+      display: none;
+    }
+  }
+
+  &__services {
+    height: 19.25rem;
+    width: 100%;
+    position: relative;
+
+    @include breakpoints-down(large) {
+      height: 55rem;
+    }
+
+    &__box {
+      //   margin-top: -200px;
+      position: absolute;
+      top: -150px;
+
+      @include breakpoints-down(large) {
+        top: -120px;
+      }
+
+      &_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        color: #222;
+        position: relative;
+        //   border: 2px solid red;
+
+        @include breakpoints-down(large) {
+          grid-template-columns: 1fr;
+          text-align: center;
+          height: 52rem;
+        }
+      }
+    }
+
+    &__corporate {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgb(242, 243, 243), rgb(184, 188, 190));
+
+      @include breakpoints-down(large) {
+        background-image: linear-gradient(
+          rgb(242, 243, 243),
+          rgb(184, 188, 190)
+        );
+      }
+    }
+
+    &__workplace {
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(rgb(242, 243, 243), rgb(184, 188, 190));
+
+      @include breakpoints-down(large) {
+        background-image: linear-gradient(
+          rgb(242, 243, 243),
+          rgb(184, 188, 190)
+        );
+      }
+    }
+
+    &__performance {
+      height: 100%;
+      width: 380px;
+      background-image: linear-gradient(rgb(242, 243, 243), rgb(184, 188, 190));
+
+      @include breakpoints-down(large) {
+        background-image: linear-gradient(
+          rgb(242, 243, 243),
+          rgb(184, 188, 190)
+        );
+        width: 300px;
+      }
+    }
+
+    &__container {
+      margin: 4rem 0 0 4rem;
+      padding-bottom: 2rem;
+      padding-right: 10px;
+      box-sizing: border-box;
+
+      @include breakpoints-down(large) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0 2rem 0rem;
+        padding-bottom: 0rem;
+        padding-right: 0px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.3125rem;
+      }
+
+      p {
+        font-size: 2.5rem;
+        font-weight: 200;
+        margin: 0;
+      }
+    }
+
+    a {
+      color: #222;
+      display: block;
+      margin-top: 4rem;
+      font-weight: 700;
+
+      @include breakpoints-down(large) {
+        font-size: $font-sm;
+        margin-top: 2.5rem;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 35%;
+        height: 3px;
+        background-color: #222;
+
+        @include breakpoints-down(large) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.contactInfomarg {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 4.125rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1.5px);
+  z-index: 3;
+}

@@ -2,6 +2,8 @@
 @import "mixin";
 @import "animations";
 @import "globals";
+
+//Landing page
 @import "hero";
 @import "services";
 @import "aboutUs";
@@ -14,3 +16,7 @@
 @import "location";
 @import "subscribe";
 @import "footer";
+@import "copyright";
+
+//About page
+@import "aboutpage";
