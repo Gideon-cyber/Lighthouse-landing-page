@@ -256,21 +256,23 @@
   }
 
   &__services {
-    height: 19.25rem;
+    height: 10.25rem;
     width: 100%;
     position: relative;
 
     @include breakpoints-down(large) {
-      height: 55rem;
+      height: 52rem;
     }
 
     &__box {
       //   margin-top: -200px;
-      position: absolute;
-      top: -150px;
+      @include breakpoints-up(large) {
+        position: absolute;
+        top: -150px;
+      }
 
       @include breakpoints-down(large) {
-        top: -120px;
+        margin-top: -120px;
       }
 
       &_container {
@@ -325,7 +327,7 @@
           rgb(242, 243, 243),
           rgb(184, 188, 190)
         );
-        width: 300px;
+        width: 100%;
       }
     }
 
@@ -356,28 +358,200 @@
         font-weight: 200;
         margin: 0;
       }
-    }
-
-    a {
-      color: #222;
-      display: block;
-      margin-top: 4rem;
-      font-weight: 700;
-
-      @include breakpoints-down(large) {
-        font-size: $font-sm;
-        margin-top: 2.5rem;
-      }
-
-      &:after {
-        content: "";
+      div {
+        color: #222;
         display: block;
-        width: 35%;
-        height: 3px;
-        background-color: #222;
+        margin-top: 4rem;
+        font-weight: 700;
+        cursor: pointer;
 
         @include breakpoints-down(large) {
-          margin: 0 auto;
+          font-size: $font-sm;
+          margin-top: 2.5rem;
+        }
+
+        &:after {
+          content: "";
+          display: block;
+          width: 35%;
+          height: 3px;
+          background-color: #222;
+
+          @include breakpoints-down(large) {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  &__products {
+    // height: 100vh;
+    width: 100%;
+    color: #17285b;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+
+      @include breakpoints-down(large) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoints-down(medium) {
+        grid-template-columns: 1fr;
+      }
+
+      &_box {
+        margin-top: 2rem;
+        h1 {
+          font-size: 1.125rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+
+    &_overlay {
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(1.5px);
+
+      &_text {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        color: $white;
+        z-index: 10;
+        font-weight: 700;
+        cursor: pointer;
+
+        @include breakpoints-down(large) {
+          top: 20px;
+          right: 20px;
+        }
+      }
+    }
+
+    &_corporate {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+      height: 80%;
+      background-color: $white;
+      color: #17285b;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem;
+      //   overflow: scroll;
+    }
+
+    &_workplace {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+      height: 80%;
+      background-color: $white;
+      color: #17285b;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: column;
+      padding: 1.5rem;
+      overflow: scroll;
+
+      li {
+        font-weight: 700;
+      }
+    }
+
+    &_performance {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+      height: 80%;
+      background-color: $white;
+      color: #17285b;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: column;
+      padding: 1.5rem;
+      text-align: center;
+
+      div {
+        a {
+          display: inline-block;
+          color: #17285b;
+          border: 2px solid #17285b;
+          padding: 0.8255rem 1rem;
+          margin-top: 0.8125rem;
+
+          &:not(:last-child) {
+            margin-right: 1rem;
+            background-color: #17285b;
+            color: $white;
+
+            @include breakpoints-down(large) {
+              margin-right: 0rem;
+            }
+          }
+        }
+      }
+    }
+
+    &_grid {
+      height: 100%;
+      width: 100%;
+      overflow-x: scroll;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.5rem;
+      padding: 0 1rem;
+
+      @include breakpoints-down(large) {
+        grid-template-columns: 1fr;
+        grid-gap: 1.25rem;
+        padding: 0 0.8rem;
+        text-align: left;
+      }
+
+      span {
+        font-weight: 700;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        background-color: #17285b;
+        color: $white;
+        padding: 0.8255rem 1rem;
+
+        @include breakpoints-down(large) {
+          padding: 0.75rem 0.9rem;
         }
       }
     }
