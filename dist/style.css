@@ -2642,7 +2642,7 @@ a {
 
 @media (max-width: 63.9375em) {
   .getaquote__form {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -2664,6 +2664,7 @@ a {
 
 .getaquote__form label {
   font-weight: 700;
+  margin-bottom: 0.8125rem;
 }
 
 .getaquote__form div {
