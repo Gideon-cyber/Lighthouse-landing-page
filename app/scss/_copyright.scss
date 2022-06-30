@@ -8,5 +8,13 @@
 
   &__text {
     margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoints-down(large) {
+      font-size: 0.625rem;
+    }
   }
 }

@@ -1,0 +1,101 @@
+.teams {
+  background-color: #f2f2f2;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #17285b;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__members {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 3rem;
+
+    @include breakpoints-down(large) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    &_image {
+      flex: 40%;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @include breakpoints-down(large) {
+        width: 100%;
+      }
+
+      div {
+        width: 90%;
+        border: 2px solid #17285b;
+        height: 245px;
+        position: absolute;
+        z-index: 0;
+        border-radius: 40px;
+        left: 10px;
+        top: 10px;
+
+        @include breakpoints-down(large) {
+          left: 8px;
+          top: 3px;
+          height: 240px;
+        }
+      }
+
+      img {
+        width: 89%;
+        border-radius: 40px;
+        z-index: 2;
+      }
+    }
+
+    &_text {
+      flex: 60%;
+      padding: 0.625rem;
+
+      @include breakpoints-down(large) {
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+
+        @include breakpoints-down(large) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        margin-top: 0.1rem;
+      }
+
+      span {
+        font-style: italic;
+        font-weight: 600;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.reverse {
+  @include breakpoints-down(large) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

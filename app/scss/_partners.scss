@@ -1,0 +1,24 @@
+.partners {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoints-down(large) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 200px;
+
+      @include breakpoints-down(large) {
+        width: 100px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
