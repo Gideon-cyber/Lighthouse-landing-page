@@ -1,0 +1,135 @@
+.blog {
+  color: #222;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &__header {
+    margin-bottom: 3rem;
+    div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      h2 {
+        font-size: $font-lg;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        @include breakpoints-down(large) {
+          font-size: 1.5rem;
+        }
+      }
+
+      hr {
+        display: inline-block;
+        width: 35%;
+
+        @include breakpoints-down(large) {
+          width: 20%;
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+
+    @include breakpoints-down(large) {
+      grid-template-columns: 1fr;
+      //   text-align: center;
+    }
+
+    &_box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__image {
+        @include breakpoints-down(large) {
+          img {
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+      &__text {
+        background-color: $white;
+        width: 85%;
+        margin-top: -20px;
+
+        &_content {
+          padding: 1rem;
+
+          &_option {
+            display: flex;
+            align-items: center;
+            // width: 70%;
+
+            p {
+              color: #999;
+              margin-right: 10px;
+            }
+
+            span {
+              position: relative;
+              margin-left: 10px;
+
+              &::before {
+                content: "";
+                background-color: #8b919e;
+                border-radius: 100%;
+                height: 3px;
+                width: 3px;
+                position: absolute;
+                top: 7px;
+                left: -10px;
+              }
+
+              a {
+                color: #999;
+              }
+            }
+          }
+
+          &_title {
+            h3 {
+              line-height: 1.5rem;
+              margin-top: 0;
+            }
+          }
+
+          &_main {
+            p {
+              color: #999;
+            }
+
+            a {
+              display: inline-block;
+              color: #17285b;
+              position: relative;
+
+              &::after {
+                content: "";
+                // background-color: #17285b;
+                position: absolute;
+                border: 8px solid #17285b;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-right: 4px solid transparent;
+                transform: translate(6px, 6px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
