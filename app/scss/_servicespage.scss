@@ -1,0 +1,19 @@
+.servicesPage {
+  color: #17285b;
+  padding-bottom: 3rem;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include breakpoints-down(large) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  li {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.8125rem;
+  }
+}

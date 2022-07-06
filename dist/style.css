@@ -2233,6 +2233,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  z-index: 2000000;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
 }
 
 .aboutPage__modal_workplace {
@@ -2701,6 +2704,31 @@ a {
   background: #17285b;
   font-size: 0.875rem;
   border-radius: 0.5rem;
+}
+
+.servicesPage {
+  color: #17285b;
+  padding-bottom: 3rem;
+}
+
+.servicesPage__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 63.9375em) {
+  .servicesPage__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.servicesPage li {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.8125rem;
 }
 
 .blog {

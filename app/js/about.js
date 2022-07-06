@@ -125,8 +125,8 @@ workplaceCasestudy.addEventListener("click", () => {
     workplaceModal.classList.remove("hidden-mob");
     workplaceModal.classList.remove("fade-out");
     workplaceModal.classList.add("fade-in");
-    coporateModal.classList.add("fade-out");
     coporateModal.classList.remove("fade-in");
+    coporateModal.classList.add("fade-out");
     performanceModal.classList.remove("fade-in");
     performanceModal.classList.add("fade-out");
     modalOpen = true;
