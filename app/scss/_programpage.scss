@@ -1,0 +1,58 @@
+.programpage {
+  color: #222;
+  padding: 4rem 0;
+
+  @include breakpoints-down(large) {
+    padding: 2.5rem 0;
+  }
+
+  a {
+    color: $red-primary;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border: 8px solid $red-primary;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-right: 4px solid transparent;
+      transform: translate(6px, 6px);
+    }
+  }
+
+  &__programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.25rem;
+
+    @include breakpoints-down(large) {
+      grid-template-columns: 1fr;
+      grid-gap: 1fr;
+    }
+  }
+
+  &__programCard {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      margin-bottom: 0;
+
+      @include breakpoints-down(large) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      line-height: 1.25rem;
+    }
+  }
+}

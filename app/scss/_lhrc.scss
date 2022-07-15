@@ -1,0 +1,92 @@
+.lhrc {
+  color: #222;
+  padding: 2.5rem 0;
+
+  @include breakpoints-down(medium) {
+    padding: 1rem 0;
+  }
+
+  &__content {
+    p {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    &__flex {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50%;
+      }
+
+      > span {
+        padding-left: 2rem;
+
+        li {
+          &:not(:last-child) {
+            margin-bottom: 0.625rem;
+          }
+        }
+      }
+
+      @include breakpoints-down(large) {
+        flex-direction: column;
+
+        img {
+          width: 100%;
+        }
+
+        > span {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+
+      img {
+        width: 100%;
+      }
+
+      @include breakpoints-down(large) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      button {
+        display: inline-block;
+        padding: 1rem;
+        border: 2px solid $red-primary;
+        border-radius: 35px;
+        margin-left: 1rem;
+        background-color: $white;
+        color: $red-primary;
+        font-family: "Montserrat", sans-serif;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $red-primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}

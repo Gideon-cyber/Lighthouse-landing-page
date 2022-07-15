@@ -11,6 +11,13 @@
     display: flex;
     flex-direction: column;
 
+    @include breakpoints-down(large) {
+      position: fixed;
+      width: 100%;
+      z-index: 20;
+      background: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.4));
+    }
+
     &_contact {
       display: flex;
       align-items: center;
@@ -27,6 +34,9 @@
     }
 
     &_hamburger {
+      &:hover {
+        cursor: pointer;
+      }
       span {
         height: 2px;
         width: 1.5rem;
@@ -249,7 +259,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 4.125rem;
   left: 0;
   width: 100%;

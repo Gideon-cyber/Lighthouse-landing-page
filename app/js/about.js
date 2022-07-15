@@ -46,6 +46,12 @@ hamburgerBtn.addEventListener("click", function () {
     mobileMenu.classList.remove("fade-in");
     mobileMenu.classList.add("fade-out");
     menuOpen = false;
+    setTimeout(fade, 310);
+
+    function fade() {
+      mobileMenu.classList.add("hidden-mob");
+      mobileMenu.classList.remove("fade-out");
+    }
   }
 });
 

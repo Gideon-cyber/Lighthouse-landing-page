@@ -1,0 +1,89 @@
+.jobsonair {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)),
+    url(/images/PROX.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_headerbackground {
+    background-color: $red-primary;
+    width: 100vw;
+  }
+
+  &_content {
+    padding: 2.5rem 0;
+
+    @include breakpoints-down(medium) {
+      padding: 1rem 0;
+    }
+
+    &_text {
+      color: #222;
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: larger;
+      }
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.625rem;
+        }
+      }
+
+      a {
+        color: $red-primary;
+        font-weight: 600;
+      }
+
+      &_socials {
+        display: flex;
+        align-items: center;
+
+        @include breakpoints-down(medium) {
+          flex-direction: column;
+        }
+
+        p {
+          line-height: 1.15rem;
+          display: inline-block;
+        }
+
+        &_media {
+          margin-left: 2rem;
+
+          @include breakpoints-down(large) {
+            margin-left: 1rem;
+          }
+
+          a {
+            display: inline-block;
+
+            &:not(:last-child) {
+              margin-right: 0.5rem;
+            }
+
+            svg path {
+              transition: fill 150ms ease-in-out;
+            }
+
+            &:hover {
+              svg path {
+                fill: #810909;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
