@@ -1,0 +1,276 @@
+.hrip {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)),
+    url(/images/TATI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_content {
+    padding: 2.5rem 0;
+    color: #222;
+
+    @include breakpoints-down(medium) {
+      padding: 2rem 0;
+    }
+
+    &_text {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: larger;
+      }
+
+      em {
+        font-weight: 600;
+      }
+
+      a {
+        color: $red-primary;
+      }
+
+      &_flex {
+        display: flex;
+        // align-items: center;
+        width: 66%;
+        justify-content: space-between;
+
+        li {
+          font-size: smaller;
+        }
+
+        @include breakpoints-down(large) {
+          flex-direction: column;
+          width: 100%;
+          gap: 1rem;
+          justify-content: center;
+        }
+      }
+
+      &_faculty {
+        h4 {
+          text-align: center;
+          font-size: $font-lg;
+        }
+
+        &_btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 1rem;
+          border-radius: 30px;
+          border: 2px $red-primary solid;
+          color: $red-primary;
+          font-weight: 600;
+
+          &:hover,
+          &:focus {
+            background-color: $red-primary;
+            color: $white;
+          }
+        }
+
+        &_grid {
+          margin: 3rem 0;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 0.625rem;
+
+          @include breakpoints-down(large) {
+            margin: 2.5rem 0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.9125rem;
+          }
+
+          @include breakpoints-down(medium) {
+            grid-template-columns: 1fr;
+            grid-gap: 0.9125rem;
+          }
+
+          div {
+            height: 250px;
+            border-radius: 0.5rem;
+          }
+
+          &_elsie {
+            background-image: url(/images/elsie.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              div {
+                font-weight: 600;
+              }
+            }
+
+            div {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              border-radius: 0;
+              background: linear-gradient(
+                to right,
+                rgba(4, 4, 4, 0.9),
+                rgba(4, 4, 4, 0)
+              );
+              height: 50px;
+              width: 100%;
+              color: $white;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          &_drey {
+            background-image: url(/images/drey.JPG);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              div {
+                font-weight: 600;
+              }
+            }
+
+            div {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              border-radius: 0;
+              background: linear-gradient(
+                to right,
+                rgba(4, 4, 4, 0.9),
+                rgba(4, 4, 4, 0)
+              );
+              height: 50px;
+              width: 100%;
+              color: $white;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          &_esther {
+            background-image: url(/images/esther.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              div {
+                font-weight: 600;
+              }
+            }
+
+            div {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              border-radius: 0;
+              background: linear-gradient(
+                to right,
+                rgba(4, 4, 4, 0.9),
+                rgba(4, 4, 4, 0)
+              );
+              height: 50px;
+              width: 100%;
+              color: $white;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          &_adeolu {
+            background-image: url(/images/drey.JPG);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              div {
+                font-weight: 600;
+              }
+            }
+
+            div {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              border-radius: 0;
+              background: linear-gradient(
+                to right,
+                rgba(4, 4, 4, 0.9),
+                rgba(4, 4, 4, 0)
+              );
+              height: 50px;
+              width: 100%;
+              color: $white;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+
+          &_damilare {
+            background-image: url(/images/drey.JPG);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            &:hover,
+            &:focus {
+              cursor: pointer;
+              div {
+                font-weight: 600;
+              }
+            }
+
+            div {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              border-radius: 0;
+              background: linear-gradient(
+                to right,
+                rgba(4, 4, 4, 0.9),
+                rgba(4, 4, 4, 0)
+              );
+              height: 50px;
+              width: 100%;
+              color: $white;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

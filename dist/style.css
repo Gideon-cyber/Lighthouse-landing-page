@@ -301,6 +301,10 @@ a {
   margin-right: 5px;
 }
 
+.hero__header_contactInfo a {
+  color: #fff;
+}
+
 .hero__nav {
   z-index: 4;
 }
@@ -1661,8 +1665,8 @@ a {
 .aboutPage {
   min-height: 100vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.4)), to(rgba(4, 4, 4, 0.2))), url(/images/sliderbg1.png);
-  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)), url(/images/sliderbg1.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.4)), to(rgba(4, 4, 4, 0.2))), url(/images/GD.jpg);
+  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)), url(/images/GD.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2988,8 +2992,8 @@ a {
 .jobsonair {
   min-height: 70vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.4)), to(rgba(4, 4, 4, 0.2))), url(/images/PROX.jpg);
-  background-image: linear-gradient(rgba(4, 4, 4, 0.4), rgba(4, 4, 4, 0.2)), url(/images/PROX.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/LIGHTHOUSE-JOA.jpg);
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/LIGHTHOUSE-JOA.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -3179,6 +3183,20 @@ a {
   margin-top: 1rem;
 }
 
+@media (max-width: 63.9375em) {
+  .lhrc__content__cta {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
 .lhrc__content__cta button {
   display: inline-block;
   padding: 1rem;
@@ -3190,9 +3208,364 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 63.9375em) {
+  .lhrc__content__cta button {
+    margin-left: 0;
+  }
+}
+
 .lhrc__content__cta button:hover {
   cursor: pointer;
   background-color: #810909;
   color: #fff;
+}
+
+.tati {
+  min-height: 70vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/TATI.jpg);
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/TATI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.tati_content {
+  padding: 2.5rem 0;
+  color: #222;
+}
+
+@media (max-width: 42.1875em) {
+  .tati_content {
+    padding: 2rem 0;
+  }
+}
+
+.tati_content_text {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 42.1875em) {
+  .tati_content_text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.tati_content_text span {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.tati_content_text em {
+  font-weight: 600;
+}
+
+.hrip {
+  min-height: 70vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/TATI.jpg);
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/TATI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hrip_content {
+  padding: 2.5rem 0;
+  color: #222;
+}
+
+@media (max-width: 42.1875em) {
+  .hrip_content {
+    padding: 2rem 0;
+  }
+}
+
+.hrip_content_text {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+@media (max-width: 42.1875em) {
+  .hrip_content_text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.hrip_content_text h4 {
+  margin-bottom: 0;
+}
+
+.hrip_content_text span {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.hrip_content_text em {
+  font-weight: 600;
+}
+
+.hrip_content_text a {
+  color: #810909;
+}
+
+.hrip_content_text_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hrip_content_text_flex li {
+  font-size: smaller;
+}
+
+@media (max-width: 63.9375em) {
+  .hrip_content_text_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.hrip_content_text_faculty h4 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hrip_content_text_faculty_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 30px;
+  border: 2px #810909 solid;
+  color: #810909;
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_btn:hover, .hrip_content_text_faculty_btn:focus {
+  background-color: #810909;
+  color: #fff;
+}
+
+.hrip_content_text_faculty_grid {
+  margin: 3rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.625rem;
+}
+
+@media (max-width: 63.9375em) {
+  .hrip_content_text_faculty_grid {
+    margin: 2.5rem 0;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.9125rem;
+  }
+}
+
+@media (max-width: 42.1875em) {
+  .hrip_content_text_faculty_grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 0.9125rem;
+  }
+}
+
+.hrip_content_text_faculty_grid div {
+  height: 250px;
+  border-radius: 0.5rem;
+}
+
+.hrip_content_text_faculty_grid_elsie {
+  background-image: url(/images/elsie.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hrip_content_text_faculty_grid_elsie:hover, .hrip_content_text_faculty_grid_elsie:focus {
+  cursor: pointer;
+}
+
+.hrip_content_text_faculty_grid_elsie:hover div, .hrip_content_text_faculty_grid_elsie:focus div {
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_grid_elsie div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0)));
+  background: linear-gradient(to right, rgba(4, 4, 4, 0.9), rgba(4, 4, 4, 0));
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hrip_content_text_faculty_grid_drey {
+  background-image: url(/images/drey.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hrip_content_text_faculty_grid_drey:hover, .hrip_content_text_faculty_grid_drey:focus {
+  cursor: pointer;
+}
+
+.hrip_content_text_faculty_grid_drey:hover div, .hrip_content_text_faculty_grid_drey:focus div {
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_grid_drey div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0)));
+  background: linear-gradient(to right, rgba(4, 4, 4, 0.9), rgba(4, 4, 4, 0));
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hrip_content_text_faculty_grid_esther {
+  background-image: url(/images/esther.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hrip_content_text_faculty_grid_esther:hover, .hrip_content_text_faculty_grid_esther:focus {
+  cursor: pointer;
+}
+
+.hrip_content_text_faculty_grid_esther:hover div, .hrip_content_text_faculty_grid_esther:focus div {
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_grid_esther div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0)));
+  background: linear-gradient(to right, rgba(4, 4, 4, 0.9), rgba(4, 4, 4, 0));
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hrip_content_text_faculty_grid_adeolu {
+  background-image: url(/images/drey.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hrip_content_text_faculty_grid_adeolu:hover, .hrip_content_text_faculty_grid_adeolu:focus {
+  cursor: pointer;
+}
+
+.hrip_content_text_faculty_grid_adeolu:hover div, .hrip_content_text_faculty_grid_adeolu:focus div {
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_grid_adeolu div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0)));
+  background: linear-gradient(to right, rgba(4, 4, 4, 0.9), rgba(4, 4, 4, 0));
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hrip_content_text_faculty_grid_damilare {
+  background-image: url(/images/drey.JPG);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hrip_content_text_faculty_grid_damilare:hover, .hrip_content_text_faculty_grid_damilare:focus {
+  cursor: pointer;
+}
+
+.hrip_content_text_faculty_grid_damilare:hover div, .hrip_content_text_faculty_grid_damilare:focus div {
+  font-weight: 600;
+}
+
+.hrip_content_text_faculty_grid_damilare div {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  border-radius: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(4, 4, 4, 0.9)), to(rgba(4, 4, 4, 0)));
+  background: linear-gradient(to right, rgba(4, 4, 4, 0.9), rgba(4, 4, 4, 0));
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

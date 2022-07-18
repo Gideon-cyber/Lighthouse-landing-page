@@ -1,0 +1,37 @@
+.tati {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)),
+    url(/images/TATI.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_content {
+    padding: 2.5rem 0;
+    color: #222;
+
+    @include breakpoints-down(medium) {
+      padding: 2rem 0;
+    }
+
+    &_text {
+      font-size: 1.15rem;
+      line-height: 1.5rem;
+
+      @include breakpoints-down(medium) {
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: larger;
+      }
+
+      em {
+        font-weight: 600;
+      }
+    }
+  }
+}
