@@ -1,8 +1,8 @@
 .testimonials {
   color: #222;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
 
   &__box {
     width: 90%;
@@ -32,15 +32,23 @@
 
     &_container {
       display: flex;
-      //   align-items: center;
-      flex-direction: row;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 50%;
+      padding: 0 2.5rem;
+      // margin-top: ;
 
       @include breakpoints-down(large) {
-        flex-direction: column;
+        width: 85%;
+      }
+
+      @include breakpoints-down(medium) {
+        // width: 100%;
+        // padding: 0 0 5rem 0;
       }
 
       &__one {
-        padding: 1rem;
+        width: 100%;
 
         img {
           display: block;

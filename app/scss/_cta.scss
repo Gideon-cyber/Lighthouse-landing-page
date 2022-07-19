@@ -34,7 +34,8 @@
 
       &:hover {
         color: $white;
-        background-color: rgba(32, 58, 115, 1);
+        background-color: $red-primary;
+        border-color: $red-primary;
       }
     }
   }

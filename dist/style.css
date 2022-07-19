@@ -184,7 +184,8 @@ a {
 }
 
 .button:hover {
-  background-color: #86cdea;
+  background-color: #d68585;
+  color: #fff;
 }
 
 @media (min-width: 64em) {
@@ -380,7 +381,7 @@ a {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #86cdea;
+  background-color: #d68585;
   display: block;
   margin: auto;
   -webkit-transition: 0.5s;
@@ -404,7 +405,7 @@ a {
 }
 
 .hero__nav a:hover {
-  color: #86cdea;
+  color: #d68585;
 }
 
 .hero__main {
@@ -576,42 +577,42 @@ a {
 .services__corporate {
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1571b0), to(rgba(21, 113, 176, 0.7))), url(/images/corporatehr.jpg);
-  background-image: linear-gradient(#1571b0, rgba(21, 113, 176, 0.7)), url(/images/corporatehr.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d68585), to(rgba(214, 133, 133, 0.418))), url(/images/corporatehr.jpg);
+  background-image: linear-gradient(#d68585, rgba(214, 133, 133, 0.418)), url(/images/corporatehr.jpg);
 }
 
 @media (max-width: 63.9375em) {
   .services__corporate {
-    background: -webkit-gradient(linear, left top, left bottom, from(#1571b0), to(rgba(21, 113, 176, 0.7)));
-    background: linear-gradient(#1571b0, rgba(21, 113, 176, 0.7));
+    background: -webkit-gradient(linear, left top, left bottom, from(#d68585), to(rgba(214, 133, 133, 0.418)));
+    background: linear-gradient(#d68585, rgba(214, 133, 133, 0.418));
   }
 }
 
 .services__workplace {
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#203a73), to(rgba(32, 58, 115, 0.7))), url(/images/workplacesol.jpg);
-  background-image: linear-gradient(#203a73, rgba(32, 58, 115, 0.7)), url(/images/workplacesol.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#661f1d), to(rgba(102, 31, 29, 0.7))), url(/images/workplacesol.jpg);
+  background-image: linear-gradient(#661f1d, rgba(102, 31, 29, 0.7)), url(/images/workplacesol.jpg);
 }
 
 @media (max-width: 63.9375em) {
   .services__workplace {
-    background: -webkit-gradient(linear, left top, left bottom, from(#203a73), to(rgba(32, 58, 115, 0.7)));
-    background: linear-gradient(#203a73, rgba(32, 58, 115, 0.7));
+    background: -webkit-gradient(linear, left top, left bottom, from(#661f1d), to(rgba(102, 31, 29, 0.7)));
+    background: linear-gradient(#661f1d, rgba(102, 31, 29, 0.7));
   }
 }
 
 .services__performance {
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1d3166), to(rgba(29, 49, 102, 0.7))), url(/images/performance1.jpg);
-  background-image: linear-gradient(to right, #1d3166, rgba(29, 49, 102, 0.7)), url(/images/performance1.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3b0c06), to(rgba(59, 12, 6, 0.7))), url(/images/performance1.jpg);
+  background-image: linear-gradient(to right, #3b0c06, rgba(59, 12, 6, 0.7)), url(/images/performance1.jpg);
 }
 
 @media (max-width: 63.9375em) {
   .services__performance {
-    background: -webkit-gradient(linear, left top, left bottom, from(#1d3166), to(rgba(29, 49, 102, 0.7)));
-    background: linear-gradient(#1d3166, rgba(29, 49, 102, 0.7));
+    background: -webkit-gradient(linear, left top, left bottom, from(#3b0c06), to(rgba(59, 12, 6, 0.7)));
+    background: linear-gradient(#3b0c06, rgba(59, 12, 6, 0.7));
   }
 }
 
@@ -720,7 +721,7 @@ a {
 }
 
 .about__text_firstParah span {
-  color: #86cdea;
+  color: #d68585;
 }
 
 .about__text_secondParah {
@@ -734,7 +735,7 @@ a {
 }
 
 .about__text_secondParah span {
-  color: #86cdea;
+  color: #d68585;
 }
 
 .about__text_learnMore a {
@@ -749,13 +750,13 @@ a {
 }
 
 .about__text_learnMore .button:hover {
-  border: 1px solid #86cdea;
+  border: 1px solid #d68585;
   color: #fff;
 }
 
 .products {
   width: 100%;
-  background-color: #17285b;
+  background-color: #570606;
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
@@ -798,8 +799,8 @@ a {
 .video {
   width: 100%;
   height: 29.6875rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(10, 10, 77, 0.8)), to(rgba(10, 10, 74, 0.4))), url(/images/videopic.jpg);
-  background-image: linear-gradient(rgba(10, 10, 77, 0.8), rgba(10, 10, 74, 0.4)), url(/images/videopic.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(77, 10, 10, 0.8)), to(rgba(77, 10, 10, 0.4))), url(/images/videopic.jpg);
+  background-image: linear-gradient(rgba(77, 10, 10, 0.8), rgba(77, 10, 10, 0.4)), url(/images/videopic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -825,9 +826,9 @@ a {
 }
 
 .video__btn.active .video__btn_play {
-  background-color: #17285b;
-  -webkit-box-shadow: 0 0 0 150vh #17285b;
-          box-shadow: 0 0 0 150vh #17285b;
+  background-color: #570606;
+  -webkit-box-shadow: 0 0 0 150vh #5b1c17;
+          box-shadow: 0 0 0 150vh #5b1c17;
   z-index: 20000;
 }
 
@@ -871,7 +872,7 @@ a {
 .video__btn_play::before {
   content: "";
   position: absolute;
-  border: 25px solid #17285b;
+  border: 25px solid #570606;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid transparent;
@@ -882,7 +883,7 @@ a {
 
 @media (max-width: 42.1875em) {
   .video__btn_play::before {
-    border: 16px solid #17285b;
+    border: 16px solid #570606;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -1038,8 +1039,8 @@ a {
 .testimonials {
   color: #222;
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
 }
 
 .testimonials__box {
@@ -1077,23 +1078,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  padding: 0 2.5rem;
 }
 
 @media (max-width: 63.9375em) {
   .testimonials__box_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    width: 85%;
   }
 }
 
 .testimonials__box_container__one {
-  padding: 1rem;
+  width: 100%;
 }
 
 .testimonials__box_container__one img {
@@ -1337,7 +1338,8 @@ a {
 
 .cta__button a:hover {
   color: #fff;
-  background-color: #203a73;
+  background-color: #570606;
+  border-color: #570606;
 }
 
 .location {
@@ -1414,7 +1416,7 @@ a {
 
 .subscribe {
   color: #fff;
-  background-color: #222;
+  background-color: #570606;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1504,6 +1506,7 @@ a {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 42.1875em) {
@@ -1516,11 +1519,12 @@ a {
   padding: 0.8125rem 1.5rem 0.8125rem 1.5rem;
   border-radius: 40px;
   border: none;
-  background-color: #222;
+  background-color: #570606;
   color: #fff;
   position: absolute;
   right: 2.5px;
   top: 2px;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 42.1875em) {
@@ -1628,7 +1632,7 @@ a {
 }
 
 .copyright {
-  background-color: #222;
+  background-color: #570606;
   padding: 1rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -1687,7 +1691,7 @@ a {
     position: fixed;
     width: 100%;
     z-index: 20;
-    background-color: #810909;
+    background-color: #570606;
   }
 }
 
@@ -1838,7 +1842,7 @@ a {
   content: "";
   width: 0%;
   height: 2px;
-  background-color: #86cdea;
+  background-color: #d68585;
   display: block;
   margin: auto;
   -webkit-transition: 0.5s;
@@ -1862,7 +1866,7 @@ a {
 }
 
 .aboutPage__nav a:hover {
-  color: #86cdea;
+  color: #d68585;
 }
 
 .aboutPage__main {
@@ -2170,7 +2174,7 @@ a {
 
 .aboutPage__products {
   width: 100%;
-  color: #17285b;
+  color: #810909;
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
@@ -2394,10 +2398,10 @@ a {
 }
 
 .teams {
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
   padding-top: 4rem;
   padding-bottom: 4rem;
-  color: #17285b;
+  color: #570606;
 }
 
 .teams__container {
@@ -2726,7 +2730,7 @@ a {
 }
 
 .servicesPage {
-  color: #17285b;
+  color: #810909;
   padding-bottom: 3rem;
 }
 
@@ -2925,7 +2929,7 @@ a {
 }
 
 .programpage a {
-  color: #810909;
+  color: #570606;
   display: inline-block;
   position: relative;
 }
@@ -2933,7 +2937,7 @@ a {
 .programpage a::after {
   content: "";
   position: absolute;
-  border: 8px solid #810909;
+  border: 8px solid #570606;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-right: 4px solid transparent;
@@ -3000,7 +3004,7 @@ a {
 }
 
 .jobsonair_headerbackground {
-  background-color: #810909;
+  background-color: #570606;
   width: 100vw;
 }
 
@@ -3037,7 +3041,7 @@ a {
 }
 
 .jobsonair_content_text a {
-  color: #810909;
+  color: #570606;
   font-weight: 600;
 }
 
@@ -3200,11 +3204,11 @@ a {
 .lhrc__content__cta button {
   display: inline-block;
   padding: 1rem;
-  border: 2px solid #810909;
+  border: 2px solid #570606;
   border-radius: 35px;
   margin-left: 1rem;
   background-color: #fff;
-  color: #810909;
+  color: #570606;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -3216,7 +3220,7 @@ a {
 
 .lhrc__content__cta button:hover {
   cursor: pointer;
-  background-color: #810909;
+  background-color: #570606;
   color: #fff;
 }
 
@@ -3309,7 +3313,7 @@ a {
 }
 
 .hrip_content_text a {
-  color: #810909;
+  color: #570606;
 }
 
 .hrip_content_text_flex {
@@ -3358,13 +3362,13 @@ a {
   text-align: center;
   padding: 1rem;
   border-radius: 30px;
-  border: 2px #810909 solid;
-  color: #810909;
+  border: 2px #570606 solid;
+  color: #570606;
   font-weight: 600;
 }
 
 .hrip_content_text_faculty_btn:hover, .hrip_content_text_faculty_btn:focus {
-  background-color: #810909;
+  background-color: #570606;
   color: #fff;
 }
 
@@ -3502,7 +3506,7 @@ a {
 }
 
 .hrip_content_text_faculty_grid_adeolu {
-  background-image: url(/images/drey.JPG);
+  background-image: url(/images/adeolu.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -3536,7 +3540,7 @@ a {
 }
 
 .hrip_content_text_faculty_grid_damilare {
-  background-image: url(/images/drey.JPG);
+  background-image: url(/images/akinwumi.jpg);
   background-position: center;
   background-size: cover;
   position: relative;

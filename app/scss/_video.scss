@@ -2,8 +2,8 @@
   width: 100%;
   height: 29.6875rem; //475px
   background-image: linear-gradient(
-      rgba(10, 10, 77, 0.8),
-      rgba(10, 10, 74, 0.4)
+      rgba(77, 10, 10, 0.8),
+      rgba(77, 10, 10, 0.4)
     ),
     url(/images/videopic.jpg);
   background-size: cover;
@@ -20,8 +20,8 @@
 
   &__btn.active {
     .video__btn_play {
-      background-color: #17285b;
-      box-shadow: 0 0 0 150vh rgba(23, 40, 91, 1);
+      background-color: $red-primary;
+      box-shadow: 0 0 0 150vh rgb(91, 28, 23);
       z-index: 20000;
 
       &::after {
@@ -54,7 +54,7 @@
       &::before {
         content: "";
         position: absolute;
-        border: 25px solid #17285b;
+        border: 25px solid $red-primary;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-right: 15px solid transparent;
@@ -62,7 +62,7 @@
         z-index: 2;
 
         @include breakpoints-down(medium) {
-          border: 16px solid #17285b;
+          border: 16px solid $red-primary;
           border-top: 10px solid transparent;
           border-bottom: 10px solid transparent;
           border-right: 10px solid transparent;

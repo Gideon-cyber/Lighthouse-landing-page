@@ -63,3 +63,12 @@ $(".works__main-carousel").flickity({
   freeScroll: true, //makes carousel scrollable
   autoPlay: true, //makes carousel scroll automatically
 });
+
+// Adding scrollable carousel feature in testimonial section
+$(".testimonials__box_container").flickity({
+  // options
+  cellAlign: "center",
+  wrapAround: true,
+  freeScroll: true, //makes carousel scrollable
+  autoPlay: true, //makes carousel scroll automatically
+});

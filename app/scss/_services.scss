@@ -14,30 +14,25 @@
     height: 100%;
     width: 100%;
     background-image: linear-gradient(
-        rgba(21, 113, 176, 1),
-        rgba(21, 113, 176, 0.7)
+        rgb(214, 133, 133),
+        rgba(214, 133, 133, 0.418)
       ),
       url(/images/corporatehr.jpg);
 
     @include breakpoints-down(large) {
-      background: linear-gradient(
-        rgba(21, 113, 176, 1),
-        rgba(21, 113, 176, 0.7)
-      );
+      background: linear-gradient(rgb(214, 133, 133),
+      rgba(214, 133, 133, 0.418));
     }
   }
 
   &__workplace {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(
-        rgba(32, 58, 115, 1),
-        rgba(32, 58, 115, 0.7)
-      ),
+    background-image: linear-gradient(rgb(102, 31, 29), rgba(102, 31, 29, 0.7)),
       url(/images/workplacesol.jpg);
 
     @include breakpoints-down(large) {
-      background: linear-gradient(rgba(32, 58, 115, 1), rgba(32, 58, 115, 0.7));
+      background: linear-gradient(rgb(102, 31, 29), rgba(102, 31, 29, 0.7));
     }
   }
 
@@ -46,13 +41,14 @@
     width: 100%;
     background-image: linear-gradient(
         to right,
-        rgba(29, 49, 102, 1),
-        rgba(29, 49, 102, 0.7)
+        rgb(59, 12, 6),
+        rgba(59, 12, 6, 0.7)
       ),
       url(/images/performance1.jpg);
 
     @include breakpoints-down(large) {
-      background: linear-gradient(rgba(29, 49, 102, 1), rgba(29, 49, 102, 0.7));
+      background: linear-gradient(rgb(59, 12, 6),
+      rgba(59, 12, 6, 0.7));
     }
   }
 
