@@ -23,6 +23,10 @@
     margin-bottom: 3rem;
 
     @include breakpoints-down(large) {
+      width: 90%;
+    }
+
+    @include breakpoints-down(medium) {
       width: 100%;
       flex-direction: column;
     }
@@ -41,18 +45,24 @@
 
       div {
         width: 90%;
-        border: 2px solid #17285b;
-        height: 245px;
+        border: 2px solid $red-primary;
+        height: 100%;
         position: absolute;
         z-index: 0;
         border-radius: 40px;
-        left: 10px;
-        top: 10px;
+        left: 12px;
+        top: 8px;
 
         @include breakpoints-down(large) {
+          // height: 100%;
           left: 8px;
-          top: 3px;
-          height: 240px;
+          top: 5px;
+        }
+
+        @include breakpoints-down(medium) {
+          left: 10px;
+          top: 6px;
+          // height: 240px;
         }
       }
 
@@ -94,7 +104,12 @@
 }
 
 .reverse {
-  @include breakpoints-down(large) {
+  // @include breakpoints-down(large) {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  // }
+
+  @include breakpoints-down(medium) {
     display: flex;
     flex-direction: column-reverse;
   }

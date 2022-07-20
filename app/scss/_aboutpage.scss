@@ -467,7 +467,7 @@
       width: 85%;
       height: 80%;
       background-color: $white;
-      color: #17285b;
+      color: #222;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -485,7 +485,7 @@
       width: 85%;
       height: 80%;
       background-color: $white;
-      color: #17285b;
+      color: #222;
       display: flex;
       align-items: center;
       margin: 0 auto;
@@ -506,7 +506,7 @@
       width: 85%;
       height: 80%;
       background-color: $white;
-      color: #17285b;
+      color: #222;
       display: flex;
       align-items: center;
       margin: 0 auto;
@@ -517,14 +517,14 @@
       div {
         a {
           display: inline-block;
-          color: #17285b;
-          border: 2px solid #17285b;
+          color: $red-primary;
+          border: 2px solid $red-primary;
           padding: 0.8255rem 1rem;
           margin-top: 0.8125rem;
 
           &:not(:last-child) {
             margin-right: 1rem;
-            background-color: #17285b;
+            background-color: $blue-primary;
             color: $white;
 
             @include breakpoints-down(large) {

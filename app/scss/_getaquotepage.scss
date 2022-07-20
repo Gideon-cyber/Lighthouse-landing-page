@@ -50,6 +50,7 @@
       background: #ebeaea;
       font-size: $font-sm;
       border-radius: 0.5rem;
+      font-family: "Montserrat", sans-serif;
     }
 
     button {
@@ -59,9 +60,10 @@
       outline: none;
       margin: 0.625rem 0;
       padding: 20px;
-      background: #17285b;
+      background: $red-primary;
       font-size: $font-sm;
       border-radius: 0.5rem;
+      font-family: "Montserrat", sans-serif;
     }
   }
 }

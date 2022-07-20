@@ -2256,7 +2256,7 @@ a {
   width: 85%;
   height: 80%;
   background-color: #fff;
-  color: #17285b;
+  color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2282,7 +2282,7 @@ a {
   width: 85%;
   height: 80%;
   background-color: #fff;
-  color: #17285b;
+  color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2311,7 +2311,7 @@ a {
   width: 85%;
   height: 80%;
   background-color: #fff;
-  color: #17285b;
+  color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2329,15 +2329,15 @@ a {
 
 .aboutPage__modal_performance div a {
   display: inline-block;
-  color: #17285b;
-  border: 2px solid #17285b;
+  color: #570606;
+  border: 2px solid #570606;
   padding: 0.8255rem 1rem;
   margin-top: 0.8125rem;
 }
 
 .aboutPage__modal_performance div a:not(:last-child) {
   margin-right: 1rem;
-  background-color: #17285b;
+  background-color: #d68585;
   color: #fff;
 }
 
@@ -2438,6 +2438,12 @@ a {
 
 @media (max-width: 63.9375em) {
   .teams__members {
+    width: 90%;
+  }
+}
+
+@media (max-width: 42.1875em) {
+  .teams__members {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2471,20 +2477,26 @@ a {
 
 .teams__members_image div {
   width: 90%;
-  border: 2px solid #17285b;
-  height: 245px;
+  border: 2px solid #570606;
+  height: 100%;
   position: absolute;
   z-index: 0;
   border-radius: 40px;
-  left: 10px;
-  top: 10px;
+  left: 12px;
+  top: 8px;
 }
 
 @media (max-width: 63.9375em) {
   .teams__members_image div {
     left: 8px;
-    top: 3px;
-    height: 240px;
+    top: 5px;
+  }
+}
+
+@media (max-width: 42.1875em) {
+  .teams__members_image div {
+    left: 10px;
+    top: 6px;
   }
 }
 
@@ -2528,7 +2540,7 @@ a {
   opacity: 0.7;
 }
 
-@media (max-width: 63.9375em) {
+@media (max-width: 42.1875em) {
   .reverse {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2631,6 +2643,7 @@ a {
   background: #f5f5f5;
   font-size: 0.875rem;
   border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .contactPage__form button {
@@ -2640,9 +2653,10 @@ a {
   outline: none;
   margin: 0.625rem 0;
   padding: 20px;
-  background: #17285b;
+  background: #570606;
   font-size: 0.875rem;
   border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .getaquote {
@@ -2715,6 +2729,7 @@ a {
   background: #ebeaea;
   font-size: 0.875rem;
   border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .getaquote__form button {
@@ -2724,9 +2739,10 @@ a {
   outline: none;
   margin: 0.625rem 0;
   padding: 20px;
-  background: #17285b;
+  background: #570606;
   font-size: 0.875rem;
   border-radius: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .servicesPage {
@@ -3540,7 +3556,7 @@ a {
 }
 
 .hrip_content_text_faculty_grid_damilare {
-  background-image: url(/images/akinwumi.jpg);
+  background-image: url(/images/akinwumi-2.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
