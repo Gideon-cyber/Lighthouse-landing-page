@@ -522,10 +522,20 @@
           padding: 0.8255rem 1rem;
           margin-top: 0.8125rem;
 
+          &:hover {
+            background-color: $red-primary;
+            color: $white;
+          }
+
           &:not(:last-child) {
             margin-right: 1rem;
-            background-color: $blue-primary;
+            background-color: $red-primary;
             color: $white;
+
+            &:hover {
+              color: $red-primary;
+              background-color: $white;
+            }
 
             @include breakpoints-down(large) {
               margin-right: 0rem;
@@ -559,7 +569,7 @@
       a {
         display: inline-block;
         margin-top: 0.5rem;
-        background-color: #17285b;
+        background-color: $red-primary;
         color: $white;
         padding: 0.8255rem 1rem;
 

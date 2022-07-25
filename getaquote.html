@@ -92,12 +92,6 @@
     <section class="getaquote">
       <div class="getaquote__form">
         <form>
-          <!-- Name:
-          <input type="text" id="name" placeholder="Your name here" required />
-          Email:
-          <input type="email" id="email" placeholder="Email address" required />
-          Phone number:
-          <input type="text" id="subject" placeholder="Subject" required /> -->
           <label for="name">Name:</label>
           <input type="text" id="name" required />
 
@@ -109,7 +103,8 @@
             <input
               type="checkbox"
               id="exclusiveHrEmployerOrganization"
-              required
+              name="cb"
+              value="Exclusive HR Employer Organization (e-HREO)"
             />
             <span>Exclusive HR Employer Organization (e-HREO):</span>
           </div>
@@ -117,61 +112,104 @@
             <input
               type="checkbox"
               id="exclusiveRecruitmentProcessOutsourcingPartner"
-              required
+              name="cb"
+              value="Exclusive Recruitment Process Outsourcing Partner (e-RPOP)"
             />
             <span
               >Exclusive Recruitment Process Outsourcing Partner (e-RPOP)</span
             >
           </div>
           <div>
-            <input type="checkbox" id="hrConsulting" required />
+            <input
+              type="checkbox"
+              id="hrConsulting"
+              name="cb"
+              value="HR Consulting"
+            />
             <span>HR Consulting</span>
           </div>
           <div>
-            <input type="checkbox" id="hrAnalytics" required />
+            <input
+              type="checkbox"
+              id="hrAnalytics"
+              name="cb"
+              value="HR Analytics"
+            />
             <span>HR Analytics</span>
           </div>
           <div>
-            <input type="checkbox" id="hrStrategicPlanning" required />
+            <input
+              type="checkbox"
+              id="hrStrategicPlanning"
+              name="cb"
+              value="HR Strategic Planning"
+            />
             <span>HR Strategic Planning</span>
           </div>
           <div>
-            <input type="checkbox" id="hrisManagement" required />
+            <input
+              type="checkbox"
+              id="hrisManagement"
+              name="cb"
+              value="HRIS Management"
+            />
             <span>HRIS Management</span>
           </div>
           <div>
-            <input type="checkbox" id="employeeEngagementPrograms" required />
+            <input
+              type="checkbox"
+              id="employeeEngagementPrograms"
+              name="cb"
+              value="Employee Engagement Programs (EEP)"
+            />
             <span>Employee Engagement Programs (EEP)</span>
           </div>
           <div>
-            <input type="checkbox" id="totalRewardsSystems" required />
+            <input
+              type="checkbox"
+              id="totalRewardsSystems"
+              name="cb"
+              value="Total Rewards Systems"
+            />
             <span>Total Rewards Systems</span>
           </div>
           <div>
-            <input type="checkbox" id="payrollManagement" required />
+            <input
+              type="checkbox"
+              id="payrollManagement"
+              name="cb"
+              value="Payroll Management"
+            />
             <span>Payroll Management</span>
           </div>
           <div>
             <input
               type="checkbox"
               id="organisationalStructuringHrDepartmentSet-up"
-              required
+              name="cb"
+              value="Organisational structuring & HR Department Set-up"
             />
             <span>Organisational structuring & HR Department Set-up</span>
           </div>
           <div>
-            <input type="checkbox" id="hrAudit" required />
+            <input type="checkbox" id="hrAudit" name="cb" value="HR Audit" />
             <span>HR Audit</span>
           </div>
           <div>
-            <input type="checkbox" id="peopleProcessOutsourcing" required />
+            <input
+              type="checkbox"
+              id="peopleProcessOutsourcing"
+              name="cb"
+              value="People Process Outsourcing (PPO)"
+            />
             <span>People Process Outsourcing (PPO)</span>
           </div>
           <div>
             <input
               type="checkbox"
               id="exclusiveTrainingDevelopmentProgram"
-              required
+              name="cb"
+              value="Exclusive Training and Development Program (e-TDP)"
             />
             <span>Exclusive Training and Development Program (e-TDP)</span>
           </div>
@@ -180,7 +218,7 @@
             rows="6"
             placeholder="Type your message here"
           ></textarea>
-          <button type="submit">SEND</button>
+          <button type="submit" class="getquoteBtn">SEND</button>
         </form>
       </div>
     </section>
@@ -196,14 +234,14 @@
         </p>
       </div>
       <div class="subscribe__button">
-        <form action="">
+        <form>
           <input
             type="text"
             name="email"
             placeholder="Your email address"
-            id="email"
+            id="subscribe"
           />
-          <button type="submit">Subscribe</button>
+          <button type="submit" class="subscribeButton">Subscribe</button>
         </form>
       </div>
     </section>
@@ -327,5 +365,7 @@
     <!--end of copyright section -->
 
     <script src="/app/js/about.js"></script>
+    <script src="/app/js/getaquote.js"></script>
+    <script src="/app/js/subscribe.js"></script>
   </body>
 </html>

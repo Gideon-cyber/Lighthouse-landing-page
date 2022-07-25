@@ -1525,6 +1525,7 @@ a {
   right: 2.5px;
   top: 2px;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 @media (max-width: 42.1875em) {
@@ -2335,10 +2336,20 @@ a {
   margin-top: 0.8125rem;
 }
 
+.aboutPage__modal_performance div a:hover {
+  background-color: #570606;
+  color: #fff;
+}
+
 .aboutPage__modal_performance div a:not(:last-child) {
   margin-right: 1rem;
-  background-color: #d68585;
+  background-color: #570606;
   color: #fff;
+}
+
+.aboutPage__modal_performance div a:not(:last-child):hover {
+  color: #570606;
+  background-color: #fff;
 }
 
 @media (max-width: 63.9375em) {
@@ -2376,7 +2387,7 @@ a {
 .aboutPage__modal_grid a {
   display: inline-block;
   margin-top: 0.5rem;
-  background-color: #17285b;
+  background-color: #570606;
   color: #fff;
   padding: 0.8255rem 1rem;
 }
@@ -2730,6 +2741,7 @@ a {
   font-size: 0.875rem;
   border-radius: 0.5rem;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 .getaquote__form button {
@@ -2743,6 +2755,7 @@ a {
   font-size: 0.875rem;
   border-radius: 0.5rem;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 .servicesPage {

@@ -74,6 +74,7 @@
         right: 2.5px;
         top: 2px;
         font-family: "Montserrat", sans-serif;
+        cursor: pointer;
 
         @include breakpoints-down(medium) {
           padding: 0.8125rem 1.25rem 0.8125rem 1.25rem;
