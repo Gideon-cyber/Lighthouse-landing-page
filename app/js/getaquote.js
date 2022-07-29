@@ -2,6 +2,7 @@ let userInput = []; //Array that holds user inputs
 let mailMessage; //Formats the user Input array into a message that will be sent to company's mail
 let userName = document.querySelector("#name");
 let userEmail = document.querySelector("#email");
+let userNumber = document.querySelector("#number");
 
 let checkboxes = document.querySelectorAll('input[name="cb"]');
 let userMessage = document.querySelector("#message");
@@ -19,13 +20,18 @@ const check = function () {
 
 getquoteBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  userInput.push(userName.value, userEmail.value, userMessage.value);
+  userInput.push(
+    userName.value,
+    userEmail.value,
+    userNumber.value,
+    userMessage.value
+  );
   // loop through the names of the checkboxes and store clicked value in userInput array
   check();
 
-  let [name, email, message, ...service] = userInput;
+  let [name, email, number, message, ...service] = userInput;
 
-  mailMessage = `Name: ${name} \nEmail: ${email}  \nServices: ${service} \nMessage: ${message}`;
+  mailMessage = `Name: ${name} \nEmail: ${email}  \nNumber: ${number}\nServices: ${service} \nMessage: ${message}`;
 
   console.log(mailMessage);
   alert(mailMessage);

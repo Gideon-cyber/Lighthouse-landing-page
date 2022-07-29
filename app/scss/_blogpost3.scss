@@ -1,0 +1,31 @@
+.blogpost3 {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)),
+    url(/images/blog3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_content {
+    padding: 2.5rem 0;
+
+    &_text {
+      color: #222;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.25rem;
+
+      @include breakpoints-down(large) {
+        width: 100%;
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

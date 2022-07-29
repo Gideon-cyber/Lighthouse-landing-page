@@ -1,0 +1,54 @@
+.blogpost2 {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)),
+    url(/images/blog2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &_content {
+    padding: 2.5rem 0;
+
+    &_text {
+      color: #222;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.35rem;
+
+      @include breakpoints-down(large) {
+        font-size: $font-sm;
+        line-height: 1.25rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      a {
+        color: $red-secondary;
+        font-weight: 600;
+      }
+
+      &_share {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+
+        @include breakpoints-down(large) {
+          width: 100%;
+        }
+
+        p {
+          line-height: 1rem;
+        }
+
+        &_links {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

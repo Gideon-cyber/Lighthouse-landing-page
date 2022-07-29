@@ -123,14 +123,13 @@
 
             a {
               display: inline-block;
-              color: #17285b;
+              color: $red-primary;
               position: relative;
 
               &::after {
                 content: "";
-                // background-color: #17285b;
                 position: absolute;
-                border: 8px solid #17285b;
+                border: 8px solid $red-primary;
                 border-top: 4px solid transparent;
                 border-bottom: 4px solid transparent;
                 border-right: 4px solid transparent;
