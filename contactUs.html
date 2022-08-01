@@ -92,10 +92,33 @@
     <section class="contactPage padding-lr">
       <div class="contactPage__form">
         <form onsubmit="sendEmail(); reset(); return false;">
-          <input type="text" name="name" id="name" placeholder="Your name here" required/>
-          <input type="email" name="email" id="email" placeholder="Email address" required/>
-          <input type="text" name="subject" id="subject" placeholder="Subject" required/>
-          <textarea name="message" id="message" rows="6" placeholder="Type your message here"></textarea>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name here"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            rows="6"
+            placeholder="Type your message here"
+          ></textarea>
           <button type="submit" class="contactBtn">SEND</button>
         </form>
       </div>
@@ -269,29 +292,50 @@
 
     <script src="/app/js/about.js"></script>
     <script src="/app/js/subscribe.js"></script>
-    <script src="/app/js/contactUs.js"></script>
-    
+    <!-- <script src="/app/js/contactUs.js"></script> -->
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
+    <script>
+      // function sendEmail() {
+      //   Email.send({
+      //     Host: "smtp.gmail.com",
+      //     // Username: "damilare.egunwale@gmail.com",
+      //     // Password: "niftydan@dhelcbizsolutions",
+      //     Username: "gideonjohnson70@gmail.com",
+      //     Password: "Gidtalker20",
+      //     To: "gideonjohnson70@gmail.com",
+      //     From: document.getElementbyId("email").value,
+      //     Subject: "New Enquiry from Lighthouse HR Company",
+      //     Body:
+      //       "Name: " +
+      //       document.getElementbyID("name").value +
+      //       "<br> Email: " +
+      //       document.getElementbyId("email").value +
+      //       "<br> Subject: " +
+      //       document.getElementbyId("subject").value +
+      //       "<br> Message: " +
+      //       document.getElementbyId("message").value,
+      //   }).then((message) => alert("Message sent successfully"));
+      // }
 
-<script>
-    function sendEmail(){
-    Email.send({
-         Host : "smtp.gmail.com",
-         Username : "damilare.egunwale@gmail.com",
-         Password : "niftydan@dhelcbizsolutions",
-         To : 'quote@lighthousehrcompany.com.ng',
-         From : document.getElementbyId("email").value, 
-         Subject : "New Enquiry from Lighthouse HR Company",
-        Body : "Name: " + document.getElementbyID("name").value
-              	+ "<br> Email: " + document.getElementbyId("email").value
-              	+ "<br> Subject: " + document.getElementbyId("subject").value
-              	+ "<br> Message: " + document.getElementbyId("message").value
-}).then(
-  message => alert(Message sent successfully)
-);
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "gideonjohnson70@gmail.com",
+          Password: "F369F828BFDCEE7A56E11375C400E1669B32",
+          To: "johnsongideon01@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
 
-}
-</script>
+      // api key
+      //61D2892D7FB04843A3BC369903E8E70066B595A8FA827FF96FAEF838669A25DF8DFA8973CCD32884765BEC95A9616A98
+
+      // smtp key
+      // F369F828BFDCEE7A56E11375C400E1669B32
+    </script>
   </body>
 </html>

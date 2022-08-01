@@ -7,7 +7,7 @@ let clientInputData = []; // Array holding clients input
 let FullMailMessage; //Formats the clientInputData array into a message that will be sent to company's mail
 
 contactBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   clientInputData.push(
     clientName.value,
     clientEmail.value,
