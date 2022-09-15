@@ -18,6 +18,13 @@
     height: 20rem;
   }
 
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &__btn.active {
     .video__btn_play {
       background-color: $red-primary;
@@ -104,6 +111,7 @@
 
   &__clip {
     position: fixed;
+    background-color: rgb(91, 28, 23);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
@@ -113,12 +121,14 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    z-index: 5;
 
     &_box {
       height: 75%;
       width: 80%;
       border: 10px solid $white;
       background-color: rgba(255, 255, 255, 0.3);
+      z-index: 6;
     }
 
     &_text {
