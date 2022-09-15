@@ -12,11 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/dist/style.css" />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Jobs on Air</title>
   </head>
   <body>
     <!-- hero section  -->
-    <section class="tati">
+    <section class="tati" data-aos="fade-down">
       <header class="aboutPage__header">
         <div class="overlay hidden-dt hidden-mob"></div>
         <div class="aboutPage__header_contact">
@@ -83,30 +86,30 @@
     <!-- Tati section  -->
     <section class="tati_content">
       <div class="tati_content_text padding-lr">
-        <p>
+        <p data-aos="fade-up">
           <span>TATI</span> an acronym for Theses Are The workplace Issues, a
           weekly program in letters and podcasts that shares real workplace
           issues and proffers solutions to them by context for a healthy
           work-life.
         </p>
-        <p>
+        <p data-aos="fade-up">
           The workplace is like a market where you meet different persons from
           different backgrounds coming in for many reasons. Some to sell, others
           to buy and some others to while away time. As every workplace has her
           peculiarity, so are her occupants - in this case, Humans! - Employees
           and Employers.
         </p>
-        <p>
+        <p data-aos="fade-up">
           No workplace is the same! Yes!.. However, one thing remains unchanging
           - <em>office issues!</em>
         </p>
-        <p>
+        <p data-aos="fade-up">
           On a daily basis, there is always one issue or the other to deliberate
           on and/or proffer solutions to in the workplace. As the HR, you cannot
           but be patient, have a listening ear and hear everyone out...including
           hearing yourself.
         </p>
-        <p>
+        <p data-aos="fade-up">
           <em>These Are The workplace Issues (TATI)</em> is a weekly newsletter
           and podcast that focuses on sharing real workplace matters/issues
           (problems, challenges, pains, wins, successes etc) as well as proffer
@@ -114,25 +117,27 @@
           they come. Our aim is to build, maintain and sustain a healthy work
           life for all our readers, subscribers and listeners.
         </p>
-        <p>
+        <p data-aos="fade-up">
           Hit the subscribe button, activate your notification button to get
           first hand alert when the next article hits the air.
         </p>
-        <p><em>WELCOME TO TATI!.....for a healthy work life</em></p>
+        <p data-aos="fade-up">
+          <em>WELCOME TO TATI!.....for a healthy work life</em>
+        </p>
       </div>
     </section>
     <!--end of Tati section  -->
 
     <!-- Subscribe section  -->
-    <section class="subscribe padding-lr">
-      <div class="subscribe__text">
+    <section class="subscribe padding-lr" data-aos="fade-down">
+      <div class="subscribe__text" data-aos="fade-up-right">
         <h3>Stay In Touch</h3>
         <p>
           Get exclusive deals you wont find anywhere else straight to your
           inbox!
         </p>
       </div>
-      <div class="subscribe__button">
+      <div class="subscribe__button" data-aos="fade-up-left">
         <form>
           <input
             type="text"
@@ -148,7 +153,7 @@
 
     <!-- footer section  -->
     <footer class="footer padding-lr">
-      <div class="footer__image">
+      <div class="footer__image" data-aos="fade-right" data-aos-offset="300">
         <div class="footer__image_logo">
           <img src="/images/logo2.png" alt="logo" />
         </div>
@@ -229,7 +234,7 @@
           </a>
         </div>
       </div>
-      <div class="footer__office">
+      <div class="footer__office" data-aos="fade-up" data-aos-offset="300">
         <h4>HEAD OFFICE</h4>
         <p>7, Ogboriefon Close, Awosika Avenue, Old Bodija, Ibadan</p>
         <p>info@lighthousehrcompany.com.ng</p>
@@ -239,7 +244,7 @@
           <p>8AM - 5PM</p>
         </div>
       </div>
-      <div class="footer__links">
+      <div class="footer__links" data-aos="fade-left" data-aos-offset="300">
         <h4>LINKS</h4>
         <ul>
           <li><a href="#">Home</a></li>
@@ -262,6 +267,13 @@
       </div>
     </section>
     <!--end of copyright section -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
 
     <script src="/app/js/about.js"></script>
     <script src="/app/js/subscribe.js"></script>

@@ -15,3 +15,12 @@ subscribeBTN.addEventListener("click", (e) => {
 
   subscribeInput.value = "";
 });
+
+///// Elasticemail login details
+//  password: 123lighthouse
+
+///// SMTP server
+// Username: newsletter@lighthousehrcompany.com.ng
+// password: 2B23BE83E202765B559B664C762F7AA72772
+
+//// Authentication Back up code: 599386

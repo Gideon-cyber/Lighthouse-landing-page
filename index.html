@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="/dist/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Lighthouse HR Company</title>
   </head>
   <body>
     <!-- hero section  -->
-    <section class="hero">
+    <section class="hero" data-aos="fade-down">
       <header class="hero__header">
         <div class="overlay hidden-dt hidden-mob"></div>
         <div class="hero__header_contact">
@@ -69,7 +72,7 @@
         </div>
       </header>
       <div class="hero__main padding-lr">
-        <h1>HUMAN RESOURCES<br /><span>CONSULTING</span></h1>
+        <h1 data-aos="fade-up">HUMAN RESOURCES<br /><span>CONSULTING</span></h1>
         <p>
           We redefine and improve employee overall work performance for
           organizational profitability, productivity and sustainability,
@@ -99,8 +102,8 @@
     <!-- hero section  -->
 
     <!-- services page section  -->
-    <section class="services">
-      <div class="services__corporate">
+    <section class="services" data-aos="fade-up">
+      <div class="services__corporate" data-aos="fade-up">
         <div class="services__container">
           <h2>Corporate HR</h2>
           <p>Services</p>
@@ -108,7 +111,11 @@
           <a href="">VIEW CASE STUDY</a>
         </div>
       </div>
-      <div class="services__workplace">
+      <div
+        class="services__workplace"
+        data-aos="fade-left"
+        data-aos-delay="150"
+      >
         <div class="services__container">
           <h2>Workplace</h2>
           <p>Solutions</p>
@@ -116,7 +123,11 @@
           <a href="">VIEW CASE STUDY</a>
         </div>
       </div>
-      <div class="services__performance">
+      <div
+        class="services__performance"
+        data-aos="fade-right"
+        data-aos-delay="200"
+      >
         <div class="services__container">
           <h2>Performance Management</h2>
           <p>Strategies</p>
@@ -128,37 +139,39 @@
     <!--end of services page section  -->
 
     <!-- About section  -->
-    <section class="about padding-lr">
+    <section class="about padding-lr" data-aos="fade-down">
       <h1 class="about__welcome">Welcome</h1>
       <div class="about__text">
-        <p>WELCOME TO OUR COMPANY</p>
-        <h1>About Us</h1>
-        <div class="about__text_firstParah">
-          We support our clients by asking
-          <span>the right questions right</span> to determine and build human
-          performance solutions and close the gaps relative to employer
-          expectations, organizational deliverables and employee performance.
-        </div>
-        <div class="about__text_secondParah">
-          Wouldn't you want to take off from your shoulders the burdens
-          associated with managing your employees throughout their
-          employment-cycle with your organization? With
-          <span>LIGHTHOUSE HR COMPANY</span>, you not only experience optimum
-          performance from your team, you also have the peace of mind and
-          strength of focus to accomplish strategic business goals faster.
-        </div>
-        <div class="about__text_learnMore">
-          <a href="/aboutUs.html" class="button">LEARN MORE</a>
+        <p data-aos="fade-up" data-aos-duration="">WELCOME TO OUR COMPANY</p>
+        <h1 data-aos="fade-up" data-aos-duration="">About Us</h1>
+        <div data-aos="zoom-in" data-aos-duration="">
+          <div class="about__text_firstParah">
+            We support our clients by asking
+            <span>the right questions right</span> to determine and build human
+            performance solutions and close the gaps relative to employer
+            expectations, organizational deliverables and employee performance.
+          </div>
+          <div class="about__text_secondParah">
+            Wouldn't you want to take off from your shoulders the burdens
+            associated with managing your employees throughout their
+            employment-cycle with your organization? With
+            <span>LIGHTHOUSE HR COMPANY</span>, you not only experience optimum
+            performance from your team, you also have the peace of mind and
+            strength of focus to accomplish strategic business goals faster.
+          </div>
+          <div class="about__text_learnMore">
+            <a href="/aboutUs.html" class="button">LEARN MORE</a>
+          </div>
         </div>
       </div>
     </section>
     <!-- End of About section  -->
 
     <!-- Product Services page-->
-    <section class="products padding-lr">
+    <section class="products padding-lr" data-aos="fade-up">
       <!-- First four column grid-->
       <div class="products__grid">
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/staffing.svg" alt="staffing" />
           </div>
@@ -170,7 +183,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/performance3.svg" alt="staffing" />
           </div>
@@ -185,7 +198,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/training.svg" alt="staffing" />
           </div>
@@ -198,7 +211,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/payroll.svg" alt="staffing" />
           </div>
@@ -214,7 +227,7 @@
 
       <!-- Second four column grid-->
       <div class="products__grid">
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/policy.svg" alt="staffing" />
           </div>
@@ -226,7 +239,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/strategic.svg" alt="staffing" />
           </div>
@@ -239,7 +252,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/hranalysis.svg" alt="staffing" />
           </div>
@@ -251,7 +264,7 @@
           </p>
         </div>
 
-        <div class="products__grid_box">
+        <div class="products__grid_box" data-aos="fade-down">
           <div class="products__grid_box_image">
             <img src="/images/employee.svg" alt="staffing" />
           </div>
@@ -268,7 +281,7 @@
     <!--end of Product Services page-->
 
     <!-- video section of page  -->
-    <section class="video">
+    <section class="video" data-aos="zoom-in">
       <div class="video__btn">
         <div class="video__btn_play"></div>
       </div>
@@ -284,14 +297,14 @@
 
     <!-- works section of page -->
     <section class="works padding-lr">
-      <h2>Our Works</h2>
-      <p>
+      <h2 data-aos="fade-down">Our Works</h2>
+      <p data-aos="fade-down">
         Browse through our gallery to see who we are, how we work, and what
         inspires us. We provide a wide range of services to meet even the most
         daring requirements.
       </p>
 
-      <div class="works__main-carousel">
+      <div class="works__main-carousel" data-aos="fade-up">
         <div class="works__carousel-cell">
           <img src="/images/workplacesol2.jpg" alt="" />
         </div>
@@ -310,7 +323,7 @@
 
     <!-- Testimonials section  -->
     <section class="testimonials padding-lr">
-      <div class="testimonials__box">
+      <div class="testimonials__box" data-aos="fade-down">
         <h2>Testimonials</h2>
         <div class="testimonials__box_container">
           <div class="testimonials__box_container__one">
@@ -358,7 +371,7 @@
 
     <!-- progress bar section  -->
     <section class="progress padding-lr">
-      <div class="progress__container_box">
+      <div class="progress__container_box" data-aos="zoom-in">
         <div class="progress__container_box__circle acquisition">
           <div class="dots acquisition_dot"></div>
           <svg>
@@ -370,7 +383,7 @@
         <p>Talent Acquisition</p>
       </div>
 
-      <div class="progress__container_box">
+      <div class="progress__container_box" data-aos="fade-down">
         <div class="progress__container_box__circle performance">
           <div class="dots performance_dot"></div>
           <svg>
@@ -382,7 +395,7 @@
         <p>Employee Optimized Performance</p>
       </div>
 
-      <div class="progress__container_box">
+      <div class="progress__container_box" data-aos="fade-up">
         <div class="progress__container_box__circle consulting">
           <div class="dots consulting_dot"></div>
           <svg>
@@ -394,7 +407,7 @@
         <p>Consulting</p>
       </div>
 
-      <div class="progress__container_box">
+      <div class="progress__container_box" data-aos="fade-down">
         <div class="progress__container_box__circle analytics">
           <div class="dots analytics_dot"></div>
           <svg>
@@ -406,7 +419,7 @@
         <p>HR Analytics</p>
       </div>
 
-      <div class="progress__container_box">
+      <div class="progress__container_box" data-aos="zoom-in">
         <div class="progress__container_box__circle retention">
           <div class="dots retention_dot"></div>
           <svg>
@@ -422,10 +435,10 @@
 
     <!-- cta section  -->
     <section class="cta padding-lr">
-      <div class="cta__text">
+      <div class="cta__text" data-aos="flip-left">
         Want to Learn More About How We Help <span>Clients in Risk?</span>
       </div>
-      <div class="cta__button">
+      <div class="cta__button" data-aos="flip-right">
         <a href="/contactUs.html" class="button">Contact Us</a>
       </div>
     </section>
@@ -433,7 +446,7 @@
 
     <!-- location section  -->
     <section class="location">
-      <div class="location__map">
+      <div class="location__map" data-aos="zoom-in">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4298948106116!2d3.905468364269416!3d7.417582214182422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed5b05c00001%3A0xbd812e4a1f4cc428!2sLighthouse%20HR%20Company!5e0!3m2!1sen!2sng!4v1653554022518!5m2!1sen!2sng"
           width="600"
@@ -444,7 +457,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="location__text padding-lr">
+      <div class="location__text padding-lr" data-aos="zoom-out">
         <h3>Our Location</h3>
         <p>
           <span>Address:</span> 7, Ogboriefon Close, Awosika Avenue, Old Bodija,
@@ -457,15 +470,15 @@
     <!-- end of location section  -->
 
     <!-- Subscribe section  -->
-    <section class="subscribe padding-lr">
-      <div class="subscribe__text">
+    <section class="subscribe padding-lr" data-aos="fade-down">
+      <div class="subscribe__text" data-aos="fade-right">
         <h3>Stay In Touch</h3>
         <p>
           Get exclusive deals you wont find anywhere else straight to your
           inbox!
         </p>
       </div>
-      <div class="subscribe__button">
+      <div class="subscribe__button" data-aos="fade-left">
         <form>
           <input
             type="text"
@@ -481,7 +494,12 @@
 
     <!-- footer section  -->
     <footer class="footer padding-lr">
-      <div class="footer__image">
+      <div
+        class="footer__image"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-anchor-placement=""
+      >
         <div class="footer__image_logo">
           <img src="/images/logo2.png" alt="logo" />
         </div>
@@ -562,7 +580,7 @@
           </a>
         </div>
       </div>
-      <div class="footer__office">
+      <div class="footer__office" data-aos="fade-up" data-aos-offset="300">
         <h4>HEAD OFFICE</h4>
         <p>7, Ogboriefon Close, Awosika Avenue, Old Bodija, Ibadan</p>
         <p>info@lighthousehrcompany.com.ng</p>
@@ -572,7 +590,7 @@
           <p>8AM - 5PM</p>
         </div>
       </div>
-      <div class="footer__links">
+      <div class="footer__links" data-aos="fade-left" data-aos-offset="300">
         <h4>LINKS</h4>
         <ul>
           <li><a href="#">Home</a></li>
@@ -589,12 +607,19 @@
     <!--end of footer section  -->
 
     <!-- copyright section -->
-    <section class="copyright padding-lr">
+    <section class="copyright padding-lr" data-aos="">
       <div class="copyright__text">
         © 2022 Lighthouse HR Company. All rights reserved.
       </div>
     </section>
     <!--end of copyright section -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="/app/js/script.js"></script>
