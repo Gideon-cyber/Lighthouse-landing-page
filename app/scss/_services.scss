@@ -20,8 +20,10 @@
       url(/images/corporatehr.jpg);
 
     @include breakpoints-down(large) {
-      background: linear-gradient(rgb(214, 133, 133),
-      rgba(214, 133, 133, 0.418));
+      background: linear-gradient(
+        rgb(214, 133, 133),
+        rgba(214, 133, 133, 0.418)
+      );
     }
   }
 
@@ -47,8 +49,7 @@
       url(/images/performance1.jpg);
 
     @include breakpoints-down(large) {
-      background: linear-gradient(rgb(59, 12, 6),
-      rgba(59, 12, 6, 0.7));
+      background: linear-gradient(rgb(59, 12, 6), rgba(59, 12, 6, 0.7));
     }
   }
 
@@ -70,28 +71,31 @@
       font-weight: 200;
       margin: 0;
     }
-  }
 
-  a {
-    color: $white;
-    display: block;
-    margin-top: 4rem;
-    font-weight: 700;
-
-    @include breakpoints-down(large) {
-      font-size: $font-sm;
-      margin-top: 2.5rem;
-    }
-
-    &:after {
-      content: "";
+    &__corporate_learnMore,
+    &__workplace_learnMore,
+    &__performance_learnMore {
+      color: $white;
       display: block;
-      width: 35%;
-      height: 3px;
-      background-color: $white;
+      margin-top: 4rem;
+      font-weight: 700;
+      cursor: pointer;
 
       @include breakpoints-down(large) {
-        margin: 0 auto;
+        font-size: $font-sm;
+        margin-top: 2.5rem;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 35%;
+        height: 3px;
+        background-color: $white;
+
+        @include breakpoints-down(large) {
+          margin: 0 auto;
+        }
       }
     }
   }

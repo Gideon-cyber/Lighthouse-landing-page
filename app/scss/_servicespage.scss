@@ -1,5 +1,7 @@
 .servicesPage {
-  color: $red-secondary;
+  background-color: $red-secondary;
+  color: $white;
+  padding-top: 2rem;
   padding-bottom: 3rem;
 
   &__grid {

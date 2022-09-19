@@ -1,19 +1,36 @@
 let subscribeInput = document.querySelector("#subscribe");
-let subscribeBTN = document.querySelector(".subscribeButton");
+let subscribeBTN = document.querySelector("#subscribe-form");
 
-subscribeBTN.addEventListener("click", (e) => {
+subscribeBTN.addEventListener("submit", (e) => {
   e.preventDefault();
   let mailToSubscribe = subscribeInput.value;
 
   if (mailToSubscribe && mailToSubscribe.includes("@")) {
     console.log(mailToSubscribe);
-    alert(mailToSubscribe);
+
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "lighthousehrcompany@gmail.com",
+        Password: "BE7518EB74B5519AC5F660DB2F15FF12F22A",
+        // Username: "gideonjohnson70@gmail.com",
+        // Password: "E18F8EA2A4C867FE6F55365049BA480398B3",
+        // To: "quote@lighthousehrcompany.com.ng",
+        To: "gideonjohnson70@gmail.com",
+        From: "lighthousehrcompany@gmail.com",
+        Subject: "Subscribe",
+        Body: mailToSubscribe,
+      }).then((message) => alert(message));
+    }
+
+    sendEmail();
+    subscribeInput.value = "";
+    reset();
+    return false;
   } else {
     console.log(`Not a valid mail`);
     alert(`Not a valid mail`);
   }
-
-  subscribeInput.value = "";
 });
 
 ///// Elasticemail login details
