@@ -134,6 +134,45 @@
   }
 }
 
+@media (min-width: 64em) {
+  @-webkit-keyframes backgroundChange {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career2.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career2.jpg);
+    }
+    35% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career1.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career1.jpg);
+    }
+    70% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career2.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career2.jpg);
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career1.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career1.jpg);
+    }
+  }
+  @keyframes backgroundChange {
+    0% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career2.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career2.jpg);
+    }
+    35% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career1.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career1.jpg);
+    }
+    70% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career2.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career2.jpg);
+    }
+    100% {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career1.jpg);
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career1.jpg);
+    }
+  }
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -3301,6 +3340,16 @@ a {
   fill: #810909;
 }
 
+.lhrcpage {
+  min-height: 70vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/LHRC-1.jpg);
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/LHRC-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .lhrc {
   color: #222;
   padding: 2.5rem 0;
@@ -3407,7 +3456,7 @@ a {
   }
 }
 
-.lhrc__content__cta button {
+.lhrc__content__cta a {
   display: inline-block;
   padding: 1rem;
   border: 2px solid #570606;
@@ -3419,12 +3468,12 @@ a {
 }
 
 @media (max-width: 63.9375em) {
-  .lhrc__content__cta button {
+  .lhrc__content__cta a {
     margin-left: 0;
   }
 }
 
-.lhrc__content__cta button:hover {
+.lhrc__content__cta a:hover {
   cursor: pointer;
   background-color: #570606;
   color: #fff;
@@ -3475,8 +3524,8 @@ a {
 .hrip {
   min-height: 70vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/TATI.jpg);
-  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/TATI.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(29, 1, 1, 0.8)), to(rgba(4, 4, 4, 0.2))), url(/images/HRIP.jpg);
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)), url(/images/HRIP.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -3777,5 +3826,259 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.careerpage {
+  min-height: 100vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 4, 4, 0.85)), to(rgba(4, 4, 4, 0.6))), url(/images/career1.jpg);
+  background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/images/career1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-animation-name: backgroundChange;
+          animation-name: backgroundChange;
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage {
+    background-position: center;
+  }
+}
+
+.careerpage__main_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__main_text {
+    text-align: center;
+  }
+}
+
+.careerpage__main_text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__main_text h1 {
+    font-size: 2.125rem;
+    margin-bottom: 0.85rem;
+  }
+}
+
+.careerpage__main_text a {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid #570606;
+  width: 200px;
+  border-radius: 35px;
+  background-color: #fff;
+  color: #570606;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__main_text a {
+    margin: auto;
+  }
+}
+
+.careerpage__main_text a:hover {
+  cursor: pointer;
+  background-color: #570606;
+  color: #fff;
+}
+
+.careerpage__yourcareer {
+  background-color: #fff;
+}
+
+.careerpage__yourcareer h2 {
+  color: #222;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+.careerpage__yourcareer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__yourcareer__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.careerpage__yourcareer__interview {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__yourcareer__interview {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.careerpage__yourcareer_text {
+  color: #222;
+}
+
+.careerpage__yourcareer_text h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.careerpage__yourcareer_text h4 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.careerpage__yourcareer_text p {
+  font-size: 1.125rem;
+}
+
+.careerpage__yourcareer_text a {
+  color: #222;
+  font-weight: 600;
+}
+
+.careerpage__yourcareer_text .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.careerpage__yourcareer_text .flex svg {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.careerpage__yourcareer__internship {
+  background-color: #570606;
+  color: #fff;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.careerpage__yourcareer__internship .textcol {
+  color: #fff;
+}
+
+.careerpage__yourcareer__internship .textcol a {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 63.9375em) {
+  .careerpage__yourcareer__internship {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.careerpage__findjob {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #810909;
+  text-align: center;
+}
+
+.careerpage__findjob__text h3 {
+  font-size: 1.125rem;
+  margin: 0 0 1rem 0;
+}
+
+.careerpage__findjob__text h4 {
+  font-size: 6.5rem;
+  margin: 0 0 1rem 0;
+  line-height: 5rem;
+}
+
+.careerpage__findjob__text p {
+  font-size: 1rem;
+}
+
+.careerpage__findjob__text_link {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #810909;
+  width: 180px;
+  margin: auto;
+  color: #810909;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.careerpage__findjob__text_link svg {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.careerpage__findjob__text_link svg path {
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
+.careerpage__findjob__text_link:hover {
+  background-color: #810909;
+  color: #fff;
+}
+
+.careerpage__findjob__text_link:hover svg path {
+  fill: #fff;
+}
+
+.careerpage__findjob__text span a {
+  cursor: pointer;
+  font-weight: 600;
+  color: #810909;
 }
 /*# sourceMappingURL=style.css.map */

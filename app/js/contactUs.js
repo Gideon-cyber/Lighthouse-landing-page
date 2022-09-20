@@ -29,7 +29,7 @@ formSubmit.addEventListener("submit", (e) => {
       Host: "smtp.elasticemail.com",
       Username: "lighthousehrcompany@gmail.com",
       Password: "BE7518EB74B5519AC5F660DB2F15FF12F22A",
-      To: "gideonjohnson70@gmail.com",
+      To: "enquiries@lighthousehrcompany.com.ng",
       From: "lighthousehrcompany@gmail.com",
       Subject: "Contact",
       Body: FullMailMessage,

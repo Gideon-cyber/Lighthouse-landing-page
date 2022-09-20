@@ -61,3 +61,24 @@
     opacity: 0;
   }
 }
+
+@include breakpoints-up(large) {
+  @keyframes backgroundChange {
+    0% {
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)),
+        url(/images/career2.jpg);
+    }
+    35% {
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)),
+        url(/images/career1.jpg);
+    }
+    70% {
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)),
+        url(/images/career2.jpg);
+    }
+    100% {
+      background-image: linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)),
+        url(/images/career1.jpg);
+    }
+  }
+}

@@ -1,3 +1,13 @@
+.lhrcpage {
+  min-height: 70vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(29, 1, 1, 0.8), rgba(4, 4, 4, 0.2)),
+    url(/images/LHRC-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .lhrc {
   color: #222;
   padding: 2.5rem 0;
@@ -78,7 +88,7 @@
         margin-bottom: 1rem;
       }
 
-      button {
+      a {
         display: inline-block;
         padding: 1rem;
         border: 2px solid $red-primary;
