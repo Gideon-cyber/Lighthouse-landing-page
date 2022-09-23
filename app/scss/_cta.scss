@@ -1,5 +1,6 @@
 .cta {
   color: #222;
+  background-color: $white;
   text-align: center;
   font-size: 1.87rem;
   padding-top: 4rem;
@@ -25,7 +26,9 @@
     align-self: center;
 
     a {
-      border: 2px solid #222;
+      border: 2px solid $white;
+      background-color: $red-secondary;
+      color: $white;
 
       @include breakpoints-down(large) {
         margin-top: 0.625rem;
@@ -33,10 +36,28 @@
       }
 
       &:hover {
-        color: $white;
-        background-color: $red-primary;
+        color: $red-secondary;
+        background-color: $white;
         border-color: $red-primary;
       }
     }
   }
+}
+
+.new-button {
+  a {
+    background-color: $white;
+    color: $red-secondary;
+
+    &:hover {
+      color: $white;
+      background-color: $red-secondary;
+      border-color: $white;
+    }
+  }
+}
+
+.cta-new {
+  color: $white;
+  background-color: $red-secondary;
 }
